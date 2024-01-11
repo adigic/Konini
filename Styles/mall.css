@@ -136,7 +136,6 @@ a:hover {
   background-color: var(--barbypink);
   color: white;
   align-items: center;
-  position: absolute;
   bottom: 0;
 }
 .footer ul {
@@ -145,6 +144,9 @@ a:hover {
   font-size: 14px;
   line-height: 1.3;
   list-style: none;
+}
+.footer a:hover {
+  cursor: pointer;
 }
 
 .left {

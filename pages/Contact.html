@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KoniniShop</title>
     <link rel="stylesheet" href="/Styles/mall.css" />
-    <link rel="stylesheet" href="/Styles/Contact.css" />
+    <link rel="stylesheet" href="/Styles/contact.css" />
     <script src="/javascript/home.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -40,7 +40,7 @@
           <a href=""><span>REGISTRERA DIG</span></a>
         </div>
         <ul class="links">
-          <li><a href="">HEM</a></li>
+          <li><a href="/index.html">HEM</a></li>
           <li>
             <a href="">POPULÄRT</span></a>
           </li>
@@ -59,6 +59,56 @@
       </nav>
     </header>
     <main>
+      <div class="Contact-title"><h1>Kontakta oss</h1></div>
+      <section class="section1">
+        
+        <div class="content-left">
+          <div class="Content-container">
+          <div class="content1">
+            <h3>Brevlåda</h3>
+            <p>PostNord <br> P.O Box 19512 <br> Stockholm,</p>
+          </div>
+          <div class="content2">
+            <h3>Email</h3>
+            <p>Koninishop@fashion.com</p>
+          </div>
+          <div class="content3">
+            <h3>Telefon support</h3>
+            <p>(+46)755253058 <br> Telefon tider 08-16 </p>
+          </div>
+        </div>
+        </div>
+        <div class="content-right">
+          <div class="form-container">
+          <form>
+            <div class="form-top">
+              
+            </div>
+
+            <div class="form-middle">
+              <label for="name">Namn</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Telefon nummer</label>
+              <input type="number">
+            </div>
+
+            <div class="form-bottom">
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message" required></textarea>
+              <div class="formbutton">
+                  <button>Skicka</button>
+                </div>    
+            </div>
+          </form>
+        </div>  
+      </div>
+      
+      </section>
+
     </main>
     <footer>
       <div class="footer">
@@ -71,7 +121,7 @@
         </ul>
         <ul>
           <h3>KUNDSERVICE</h3>
-          <li>Kontakta oss</li>
+          <li><a href="/Pages/Contact.html">Kontakta oss</a></li>
           <li>Vanliga frågor</li>
           <li>Integritetspolicy</li>
           <li>Cookie-policy</li>
