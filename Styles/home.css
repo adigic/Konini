@@ -2,18 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  --barbypink: #e0218a;
-  --textcolor: #000000;
-  --hovercolor: #e06cac;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -25,18 +14,32 @@ html {
 body {
   width: 100%;
 }
+
+
 /*---------------------------BANNER--------------------------------------------------*/
 .Bannertop {
-  height: 25px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   background-color: #e0218a;
   color: white;
+  padding: 10px;
 }
+
+.bannerLeft{                                 
+  position: absolute;
+  left: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.bannerRight{ 
+  position: absolute;
+  right: 20px;
+}
+
 .Bannertop p {
-  font-size: 14px;
-  margin-left: 10px;
+  font-size: 14px; 
+  margin: auto;
 }
 /*----------------------------HEADER-------------------------------------------------*/
 .HeaderTop {
@@ -44,11 +47,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100px;
-}
-
-.HeaderTop img {
-  width: 180px;
-  height: 150px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .headericons img {
@@ -60,17 +60,28 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
 }
 
-.poptext {
-  color: var(--barbypink);
+.links {
+  margin: auto;
 }
 
 .reatext {
   color: var(--reatext);
+}
+
+.loginlink {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  align-items: center;
+}
+
+.loginlink p{
+  margin: 0;
 }
 
 .loginlink,
@@ -79,7 +90,11 @@ body {
 }
 
 .cartlink {
+    display: flex;
+    position: absolute;
+    right: 10px;
 }
+
 .cartlink img {
   width: 20px;
   margin: 0 10px 0 0;
@@ -91,8 +106,8 @@ body {
 
 .navbar li,
 a {
-  color: var(--textcolor);
-  text-decoration: none;
+  color: var(--textcolor) !important;
+  text-decoration: none !important;
   font-weight: 600;
   list-style: none;
   margin: 0 10px 0 10px;
@@ -102,8 +117,80 @@ a {
 a:hover {
   transition: 0.2s;
   cursor: pointer;
-  color: var(--hovercolor);
+  color: var(--hovercolor) !important;
 }
+
+
+/*---------------------------MAIN--------------------------------------------------*/
+
+
+/*---------------------------FOOTER--------------------------------------------------*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--barbypink);
+  color: white;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.footer ul {
+}
+.footer li {
+  font-size: 14px;
+  line-height: 1.3;
+  list-style: none;
+}
+
+.left{
+  display: flex;
+  padding: 20px;
+  left: 20px;
+}
+
+.followus {
+  display: flex;
+  flex-direction: column;
+}
+.social i {
+  font-size: 30px;
+}
+
+.social i span {
+  font-size: 40px;
+}
+
+.right{
+  position: absolute;
+  right: 50px;
+
+}
+
+.trustpilot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trustpilot ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.trustpilot h3 {
+  text-align: center;
+}
+
+.trustpilot ul img {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
 /*---------------------------MediaQuery Header--------------------------------------------------*/
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -139,55 +226,7 @@ a:hover {
     font-size: 12px;
   }
 }
-/*---------------------------FOOTER--------------------------------------------------*/
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px;
-  background-color: var(--barbypink);
-  color: white;
-}
-.footer ul {
-}
-.footer li {
-  font-size: 14px;
-  line-height: 1.3;
-  list-style: none;
-}
 
-.followus {
-  display: flex;
-  flex-direction: column;
-}
-.social img {
-  margin-top: 10px;
-  width: 25px;
-  height: 20px;
-}
-
-.trustpilot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.trustpilot ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.trustpilot h3 {
-  text-align: center;
-}
-
-.trustpilot ul img {
-  width: 40px;
-  height: 40px;
-  margin-left: 5px;
-}
 /*---------------------------MediaQuery Footer--------------------------------------------------*/
 @media only screen and (max-width: 600px) {
   .footer ul {
@@ -206,9 +245,4 @@ a:hover {
   .trustpilot ul {
     display: none;
   }
-}
-
-/*---------------------------Main--------------------------------------------------*/
-main {
-  height: 66vh;
 }
