@@ -61,7 +61,7 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray;
-  padding-bottom: 10px;
+  padding-bottom: 0 !important;
 }
 
 .links {
@@ -135,8 +135,9 @@ a:hover {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+
   z-index: 1;
 }
 
@@ -149,7 +150,7 @@ a:hover {
   display: block;
   text-align: left;
 }
-/* Add a grey background color to dropdown links on hover */
+/* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ffffff;
 }

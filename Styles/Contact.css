@@ -13,7 +13,7 @@
 .content-left {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   margin-left: 100px;
 }
 .Content-container {
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: right;
 
-  width: 40%;
+  width: 30%;
 }
 /*-----------------------------------------------Contact FORM-----------------------------------------------------------------------*/
 .form-container {
