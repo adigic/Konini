@@ -1,0 +1,14 @@
+{
+  "Products": [
+    {
+      "Type": "Geo Dress",
+      "Color": "Red",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256666512.jpeg?w=450&auto=format"
+    },
+    {
+      "Type": "Geo Dress",
+      "Color": "Black",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256124380.jpeg?w=450&auto=format"
+    }
+  ]
+}
