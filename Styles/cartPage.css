@@ -15,6 +15,7 @@ body {
   width: 100%;
 }
 
+
 /*---------------------------BANNER--------------------------------------------------*/
 .Bannertop {
   display: flex;
@@ -24,20 +25,20 @@ body {
   padding: 10px;
 }
 
-.bannerLeft {
+.bannerLeft{                                 
   position: absolute;
   left: 20px;
   display: flex;
   gap: 25px;
 }
 
-.bannerRight {
+.bannerRight{ 
   position: absolute;
   right: 20px;
 }
 
 .Bannertop p {
-  font-size: 14px;
+  font-size: 14px; 
   margin: auto;
 }
 /*----------------------------HEADER-------------------------------------------------*/
@@ -75,11 +76,11 @@ body {
 .loginlink {
   display: flex;
   position: absolute;
-  left: 3rem;
+  left: 10px;
   align-items: center;
 }
 
-.loginlink p {
+.loginlink p{
   margin: 0;
 }
 
@@ -89,20 +90,14 @@ body {
 }
 
 .cartlink {
-  display: flex;
-  position: absolute;
-  right: 3rem;
-  align-items: center;
+    display: flex;
+    position: absolute;
+    right: 10px;
 }
 
-.cartlink a {
-  margin: 3px 0 0 auto;
-  padding-left: 5px;
-}
-
-.cartlink a i {
-  cursor: pointer;
-  font-size: 1.5rem;
+.cartlink img {
+  width: 20px;
+  margin: 0 10px 0 0;
 }
 
 .navbar ul {
@@ -125,7 +120,9 @@ a:hover {
   color: var(--hovercolor) !important;
 }
 
+
 /*---------------------------MAIN--------------------------------------------------*/
+
 
 /*---------------------------FOOTER--------------------------------------------------*/
 .footer {
@@ -147,7 +144,7 @@ a:hover {
   list-style: none;
 }
 
-.left {
+.left{
   display: flex;
   padding: 20px;
   left: 20px;
@@ -165,9 +162,10 @@ a:hover {
   font-size: 40px;
 }
 
-.right {
+.right{
   position: absolute;
   right: 50px;
+
 }
 
 .trustpilot {
