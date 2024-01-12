@@ -2,3 +2,28 @@
   display: flex;
   justify-content: center;
 }
+
+.productList h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.productList p {
+  font-size: 12px;
+}
+
+.productList ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.productList li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.productList img {
+  width: 150px;
+  height: 200px;
+  border: 1px solid rgba(128, 128, 128, 0.486);
+}
