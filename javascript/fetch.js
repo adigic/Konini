@@ -7,10 +7,10 @@ function displayProducts(productArray) {
   const productList = document.createElement("ul");
   // Gå igenom varje produkt i listan
   productArray.forEach((product) => {
-    // Skapa en Li för varje bok
+    // Skapa en Li för varje product
     const listItem = document.createElement("li");
 
-    // Skapa element för bokdetaljer (titel, genre, beskrivning, omslagsbild)
+    // Skapa element
     const productType = document.createElement("h2");
     productType.textContent = `${product.Type}`;
 
@@ -30,11 +30,11 @@ function displayProducts(productArray) {
   ProductListElement.appendChild(productList);
 }
 
-// Hämta böcker från servern när sidan laddas
+// Hämta products från servern när sidan laddas
 fetch("http://localhost:3000/Products")
   .then((res) => res.json())
   .then((productServer) => {
-    // Visa de böcker från data.json
+    // Visa de products från data.json
     displayProducts(productServer);
   })
   .catch((err) => console.log("error" + err));
