@@ -1,6 +1,3 @@
-/*Global*/
-let array = [];
-
 function displayProducts(productArray) {
   const ProductListElement = document.getElementById("productList");
 
@@ -34,7 +31,7 @@ function displayProducts(productArray) {
 fetch("http://localhost:3000/Products")
   .then((res) => res.json())
   .then((productServer) => {
-    // Visa de products från data.json
+    // Visa products från data.json
     displayProducts(productServer);
   })
   .catch((err) => console.log("error" + err));
