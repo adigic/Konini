@@ -12,6 +12,7 @@
     --highlight: #fff3d9;
     --reatext: red;
   }
+
   body {
     width: 100%;
   }
@@ -147,39 +148,113 @@
   
   /*---------------------------MAIN--------------------------------------------------*/
   
-  main {
-    margin: 5rem 12rem;
-  }
-  
-  main h3 {
-    max-width: 1500px;
-    margin: auto;
-    margin-bottom: 5rem;
-    font-weight: 600 !important;
-    font-size: 3rem;
-  }
-  
-  .topText {
-    max-width: 1500px;
-    margin: auto;
+  .product-container {
     display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 80%;
+    gap: 35px;
+  }
+
+  /* PRODUKT-BILDSPEL */
+  .carousel-indicators button.thumbnail {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-indicators img {
+    max-height: 160px;
+    object-fit: fill;
+  }
+
+  .carousel-indicators {
+    position: static !important;
+  }
+
+  .carousel {
+    max-width: 400px;
+    height: 100%;
+  }
+
+  .product-img {
+    max-width: 400px;
+    height: 100%;
+  }
+
+  /* PRODUKTINFO */
+  .product-information {
+    max-width: 40%;
+  }
+
+  .product-information h1 {
+    font-size: 1.8rem;
+    margin-top: 80px;
+  }
+
+  .product-information h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-information p {
+    margin: 50px 0px 5px;
+  }
+
+  .button-wrapper button {
+    width: 50px;
+    height: 45px;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+  .button-wrapper button:hover {
+    background-color: #e6e5e5;
+  }
+
+  .addcart-button {
+    margin: 15px 0px 30px;
+    width: 200px;
+    height: 40px;
+    background-color: #e0218a !important;
+    border-color: #e0218a !important;
+  }
+
+  .addcart-button:hover {
+    background-color: #b91b72 !important;
+    border-color: #ad1468 !important;
+  }
+
+  .product-info h4 {
+    font-size: 1.2rem;
+  }
+
+  .product-info p {
+    margin: 0px;
+  }
+
+  /* REKOMMENDERAT */
+  .recommended-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 70%;
+  }
+
+  .recommended-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .recommended-gallery {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 10px 10px 10px;
-    border-bottom: 1px solid black;
   }
-  
-  .topText h5 {
-    font-weight: 600 !important;
-    font-size: 1rem;
-  }
-  
-  .topText .right {
-    display: flex;
-    gap: 100px;
+
+  .recommended-gallery img {
+    height: 250px;
   }
   
   /*---------------------------FOOTER--------------------------------------------------*/
-  .footer {
+ /*  .footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -282,7 +357,7 @@
   .trustpilot ul img {
     width: 40px;
     height: 40px;
-  }
+  } */
   
   /*---------------------------MediaQuery Header--------------------------------------------------*/
   @media only screen and (max-width: 600px) {
