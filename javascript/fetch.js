@@ -22,10 +22,9 @@ function displayProducts(productArray) {
     listItem.appendChild(productType);
     listItem.appendChild(productColor);
 
-    // Lägg till click event listener för att hantera klick på varje produkt
+    // Lägger till click event listener för att hantera klick på varje produkt
     listItem.addEventListener("click", () => {
-      // Här kan du implementera vad som ska hända när en produkt klickas
-      // Till exempel, öppna en detaljvy, navigera till en produktssida, etc.
+      //Redirect to productPage and send json data parameters.
       window.location.href = `../Pages/productPage.html?type=${product.Type}&color=${product.Color}&image=${product.Image}`;
     });
 
