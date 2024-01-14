@@ -24,7 +24,7 @@ function displayProducts(productArray) {
 
     // Lägger till click event listener för att hantera klick på varje produkt
     listItem.addEventListener("click", () => {
-      //Redirect to productPage and send json data parameters.
+      // omdirigera till produktsidan och skicka med JSON data som parametrar
       window.location.href = `../Pages/productPage.html?type=${product.Type}&color=${product.Color}&image=${product.Image}`;
     });
 
