@@ -17,10 +17,16 @@ function displayProducts(productArray) {
     const productImage = document.createElement("img");
     productImage.src = product.Image;
 
-    // Lägg till alla element i Li
+    // Lägg till alla element
     listItem.appendChild(productImage);
     listItem.appendChild(productType);
     listItem.appendChild(productColor);
+
+    // Lägger till click event listener för att hantera klick på varje produkt
+    listItem.addEventListener("click", () => {
+      // omdirigera till produktsidan och skicka med JSON data som parametrar
+      window.location.href = `../Pages/productPage.html?type=${product.Type}&color=${product.Color}&image=${product.Image}`;
+    });
 
     productList.appendChild(listItem);
   });

@@ -12,14 +12,31 @@
   font-size: 12px;
 }
 
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.productList {
+  width: 80%;
+  display: flex;
+}
+
 .productList ul {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .productList li {
   list-style: none;
   margin-left: 20px;
+}
+
+.productList li:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-10px);
 }
 
 .productList img {

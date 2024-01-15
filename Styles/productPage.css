@@ -1,0 +1,417 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  html {
+    --barbypink: #e0218a;
+    --textcolor: #000000;
+    --hovercolor: #e06cac;
+    --highlight: #fff3d9;
+    --reatext: red;
+  }
+
+  body {
+    width: 100%;
+  }
+  
+  /*---------------------------BANNER--------------------------------------------------*/
+  .Bannertop {
+    display: flex;
+    align-items: center;
+    background-color: #e0218a;
+    color: white;
+    padding: 10px;
+  }
+  
+  .bannerLeft {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .bannerRight {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .Bannertop p {
+    font-size: 14px;
+    margin: auto;
+  }
+  /*----------------------------HEADER-------------------------------------------------*/
+  .HeaderTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .headericons img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  /*---------------------------NAVBAR--------------------------------------------------*/
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+  }
+  
+  .links {
+    margin: auto;
+    gap: 20px;
+  }
+  
+  .reatext {
+    color: var(--reatext);
+  }
+  
+  .search a i {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .loginlink {
+    display: flex;
+    position: absolute;
+    left: 3rem;
+    align-items: center;
+  }
+  
+  .loginlink a,
+  .loginlink p {
+    color: gray !important;
+    font-weight: 400 !important;
+  }
+  
+  .loginlink a i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-right: 5px;
+  }
+  
+  .loginlink p {
+    padding: 0px 5px;
+    margin: 0;
+  }
+  
+  .loginlink,
+  .cartlink span a {
+    font-size: 12px;
+    font-weight: 400 !important;
+  }
+  
+  .cartlink {
+    display: flex;
+    position: absolute;
+    right: 3rem;
+    align-items: center;
+  }
+  
+  .cartlink a {
+    margin: 6px 0 0 auto;
+    padding-left: 5px;
+  }
+  
+  .cartlink a i {
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar li,
+  a {
+    color: var(--textcolor) !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    list-style: none;
+  }
+  
+  .navbar span:hover,
+  a:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--hovercolor) !important;
+  }
+  
+  /*---------------------------MAIN--------------------------------------------------*/
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 80%;
+    gap: 35px;
+  }
+
+  /* PRODUKT-BILDSPEL */
+  .carousel-indicators button.thumbnail {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-indicators img {
+    max-height: 160px;
+    object-fit: fill;
+  }
+
+  .carousel-indicators {
+    position: static !important;
+  }
+
+  .carousel {
+    max-width: 400px;
+    height: 100%;
+  }
+
+  .product-img {
+    max-width: 400px;
+    height: 100%;
+  }
+
+  /* PRODUKTINFO */
+  .product-information {
+    max-width: 40%;
+  }
+
+  .product-information h1 {
+    font-size: 1.8rem;
+    margin-top: 80px;
+  }
+
+  .product-information h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-information p {
+    margin: 50px 0px 5px;
+  }
+
+  .button-wrapper button {
+    width: 50px;
+    height: 45px;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+  .button-wrapper button:hover {
+    background-color: #e6e5e5;
+  }
+
+  .addcart-button {
+    margin: 15px 0px 30px;
+    width: 200px;
+    height: 40px;
+    background-color: #e0218a !important;
+    border-color: #e0218a !important;
+  }
+
+  .addcart-button:hover {
+    background-color: #b91b72 !important;
+    border-color: #ad1468 !important;
+  }
+
+  .product-info h4 {
+    font-size: 1.2rem;
+  }
+
+  .product-info p {
+    margin: 0px;
+  }
+
+  /* REKOMMENDERAT */
+  .recommended-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 70%;
+  }
+
+  .recommended-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .recommended-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .recommended-gallery img {
+    height: 250px;
+  }
+  
+  /*---------------------------FOOTER--------------------------------------------------*/
+ /*  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--barbypink);
+    color: white;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .footer h3 {
+    font-size: 1.7rem;
+  }
+  
+  .footer ul {
+    margin: 0;
+  }
+  
+  .footer li {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    list-style: none;
+    padding: 2px;
+    font-weight: 200 !important;
+  }
+  
+  .footer li:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--highlight) !important;
+  }
+  
+  .footer .left {
+    display: flex;
+    padding: 20px;
+    left: 20px;
+  }
+  
+  .customerService,
+  .socials {
+    padding-left: 8rem;
+  }
+  
+  .social {
+    display: flex;
+    padding: 0;
+  }
+  
+  .social a {
+    color: white !important;
+  }
+  
+  .social a:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--highlight) !important;
+  }
+  .social i {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .social span i {
+    font-size: 4rem;
+  }
+  
+  .footer .right {
+    position: absolute;
+    right: 50px;
+  }
+  
+  .trustpilot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .trustpilot ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 25px;
+  }
+  
+  .trustpilot h3 {
+    margin-bottom: 25px;
+  }
+  
+  .trustpilot p {
+    text-align: center;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  .trustpilot ul img {
+    width: 40px;
+    height: 40px;
+  } */
+  
+  /*---------------------------MediaQuery Header--------------------------------------------------*/
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+  
+    .HeaderTop {
+      box-shadow: 0 5px 5px -2px gray;
+      border-top: none;
+    }
+  
+    .Bannertop p {
+      font-size: 10px !important;
+    }
+    .Bannertop {
+      height: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .loginlink,
+    .cartlink span {
+      display: none;
+    }
+    .navbar {
+      justify-content: center;
+    }
+  
+    .loginnavbar ul {
+      display: none;
+    }
+    .Bannertop p {
+      font-size: 12px;
+    }
+  }
+  
+  /*---------------------------MediaQuery Footer--------------------------------------------------*/
+  @media only screen and (max-width: 600px) {
+    .footer ul {
+      font-size: 12px !important;
+    }
+    .footer li {
+      font-weight: lighter !important;
+      font-size: 10px !important;
+    }
+  
+    .social img {
+      margin-top: 10px;
+      width: 20px;
+      height: 15px;
+    }
+    .trustpilot ul {
+      display: none;
+    }
+  }
+  

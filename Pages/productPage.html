@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KoniniShop</title>
+    <link rel="stylesheet" href="../Styles/productPage.css">
+    <script src="/javascript/home.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Smooch+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="Bannertop">
+        <div class="bannerLeft">
+          <p>Fri frakt över 500kr</p>
+          <p>Snabb leverans!</p>
+        </div>
+        <p>
+          Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
+          returrätt | Fria returer i butik
+        </p>
+        <div class="bannerRight">
+          <p>Hitta butik!</p>
+        </div>
+      </div>
+      <div class="HeaderTop">
+        <img src="../images/LOGO.png" alt="" />
+      </div>
+      <nav class="navbar">
+        <div class="loginlink">
+          <a href=""><i class='bx bx-user'></i></a>
+          <a href=""><span>LOGGA IN</span></a>
+          <p>|</p>
+          <a href=""><span>REGISTRERA DIG</span></a>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">HEM</a></li>
+          <li>
+            <a href="">POPULÄRT</a>
+          </li>
+          <li><a href="">KATEGORIER</a></li>
+          <li><a href="">VARUMÄRKEN</a></li>
+          <li>
+            <a href=""><span class="reatext">REA</span></a>
+          </li>
+          <li class="search"><a href=""><i class="bx bx-search"></i></a></li>
+        </ul>
+
+        <div class="cartlink">
+          <span><a href="">0.00 SEK</a></span>
+          <a href="/cartPage.html"><i class="bx bxs-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      
+        <div class="product-container">
+         
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+      
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/dress1.jpeg" class="product-img d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/dress2.jpeg" class="product-img d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/dress3.jpeg" class="product-img d-block w-100" alt="...">
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
+                <img src="../Images/dress1.jpeg" class="d-block w-100" alt="...">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
+                <img src="../Images/dress2.jpeg" class="d-block w-100" alt="...">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
+                <img src="../Images/dress3.jpeg" class="d-block w-100" alt="...">
+              </button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+          <div class="product-information">
+            <section>
+              <h1>Konini dress</h1>
+              <h2>399:-</h2>
+              <form action="">
+                <p>Välj storlek:</p>
+                <div class="button-wrapper">
+                  <button>XS</button>
+                  <button>S</button>
+                  <button>M</button>
+                  <button>L</button>
+                  <button>XL</button>
+                </div>
+                <button class="addcart-button btn btn-primary">Lägg i varukorgen</button>
+              </form>
+              <div class="product-info">
+                <h4>Produktinformation</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod atque laborum beatae delectus. Excepturi vel provident harum ut nobis, maiores facere tenetur earum tempora quis ullam culpa architecto ducimus eaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod atque laborum beatae delectus. Excepturi vel provident harum ut nobis, maiores facere tenetur earum tempora quis ullam culpa architecto ducimus eaque.</p>                
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="recommended-container">
+          <h2>Rekommenderade produkter</h2>
+          <div class="recommended-gallery">
+            <img src="../Images/dress1.jpeg" alt="">
+            <img src="../Images/dress1.jpeg" alt="">
+            <img src="../Images/dress1.jpeg" alt="">
+            <img src="../Images/dress1.jpeg" alt="">
+            <img src="../Images/dress1.jpeg" alt="">
+            <img src="../Images/dress1.jpeg" alt="">
+          </div>
+        </div>
+
+    </main>
+
+ <!--    <footer>
+      <div class="footer">
+        <div class="left">
+          <ul class="konini">
+            <h3>KONINI</h3>
+            <li>Om oss</li>
+            <li>Partnerskap</li>
+            <li>Jobba hos oss</li>
+          </ul>
+          <ul class="customerService">
+            <h3>KUNDSERVICE</h3>
+            <li>Kontakta oss</li>
+            <li>Vanliga frågor & svar</li>
+            <li>Integritetspolicy</li>
+            <li>Cookie-policy</li>
+          </ul>
+          <ul class="socials">
+            <h3>FÖLJ OSS</h3>
+            <div class="social">
+              <a href=""><i class="bx bxl-facebook-square"></i></a>
+              <a href=""><span><i class="bx bxl-youtube"></i></span></a>
+              <a href=""><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="trustpilot">
+            <h3>Trustpilot</h3>
+            <ul>
+              <div>
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+              </div>
+              <p>Utmärkt 5/5 - 1996 omdömen</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+  </body>
+</html>
