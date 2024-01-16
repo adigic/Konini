@@ -9,6 +9,7 @@ html {
   --barbypink: #e0218a;
   --textcolor: #000000;
   --hovercolor: #e06cac;
+  --highlight: #fff3d9;
   --reatext: red;
 }
 body {
@@ -286,45 +287,69 @@ main {
   color: white;
   align-items: center;
 }
-.footer ul {
+
+.footer h3 {
+  font-size: 1.5rem;
 }
+
+.footer ul {
+  margin: 0;
+}
+
 .footer li {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.3;
   list-style: none;
+  padding: 2px;
+  font-weight: 200 !important;
 }
 
-.footer li a {
-  margin: 0;
-  color: white !important;
-}
-
-.footer a:hover {
+.footer li:hover {
+  transition: 0.2s;
   cursor: pointer;
-  transition: 0.5s !important;
-  color: var(--hovercolor) !important;
+  color: var(--highlight) !important;
 }
 
-.left {
+.footer .left {
   display: flex;
   padding: 20px;
   left: 20px;
 }
 
-.followus {
+.customerService,
+.socials {
+  padding-left: 4rem;
+}
+
+.social {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  color: white !important;
+  transition: 0.2s ease-in-out;
+}
+
+.social a:hover {
+  cursor: pointer;
+  color: var(--highlight) !important;
+  transform: translateY(-5px);
+  text-shadow: -1px 30px 4px rgba(0, 0, 0, 0.419);
 }
 .social i {
-  font-size: 30px;
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
 }
 
-.social i span {
-  font-size: 40px;
+.social span i {
+  font-size: 2.7rem;
+  padding-bottom: 3.5px;
 }
 
-.right {
-  position: absolute;
+.footer .right {
   right: 50px;
 }
 
@@ -332,6 +357,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .trustpilot ul {
@@ -340,18 +366,34 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding-left: 25px;
 }
+
 .trustpilot h3 {
+  margin-bottom: 25px;
+}
+
+.trustpilot p {
   text-align: center;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 .trustpilot ul img {
   width: 40px;
   height: 40px;
-  margin-left: 5px;
 }
 
 /*---------------------------MediaQuery Header--------------------------------------------------*/
+@media only screen and (min-width: 1125px) {
+  .footer .right {
+    position: absolute;
+  }
+
+}
+
+
 @media only screen and (max-width: 600px) {
   .navbar {
     display: none;
@@ -367,6 +409,29 @@ main {
   }
   .Bannertop {
     height: 35px;
+  }
+}
+
+@media only screen and (max-width: 1124px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .right {
+    margin: 50px;
+  }
+
+  .trustpilot {
+    display: block;
+    text-align: center;
+  }
+
+  .trustpilot h3 {
+    margin-left: 25px;
+  }
+
+  .bannerLeft,.bannerRight{
+    display: none;
   }
 }
 
