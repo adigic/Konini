@@ -53,7 +53,7 @@
 
         <div class="cartlink">
           <span><a href="">0.00 SEK</a></span>
-          <a href="/cartPage.html"><i class="bx bxs-cart"></i></a>
+          <a href="cartPage.html"><i class="bx bxs-cart"></i></a>
         </div>
       </nav>
     </header>
@@ -64,6 +64,12 @@
         <button id="paypalButton">PayPal</button>
         <button id="googlePayButton">Google Pay</button>
       </div>
+      <div class="line-container">
+        <div class="line"></div>
+        <div class="breakpoint">
+            <span class="breakpoint-text">ELLER</span>
+        </div>
+    </div>    
       <div class="form-content">
         <div class="form-inner">
           <div class="form-group">
@@ -90,15 +96,19 @@
           </div>
           <div class="form-group">
             <label>Fraktmetod</label>
-            <input type="radio" name="fraktmetod" placeholder="postnord-hem">
-            <input type="radio" name="fraktmetod" placeholder="postnord-hämta">
+            <div class="radio-group">
+              <input type="radio" id="postnord-hem" name="fraktmetod" placeholder="postnord-hem"> <label for="postnord-hem">Postnord Hemleverans</label>
+              <input type="radio" id="postnord-hämta" name="fraktmetod" placeholder="postnord-hämta"> <label for="postnord-hämta">Postnord Utlämningställe</label>
+            </div>
           </div>
           <div class="form-group">
             <label>Betalning</label>
-            <input type="radio" name="betalningsmetod" value="klarna">
-            <input type="radio" name="betalningsmetod" value="paypal">
-            <input type="radio" name="betalningsmetod" value="kort">
-          </div>
+            <div class="radio-group">
+                <input type="radio" id="klarna" name="betalningsmetod" value="klarna"> <label for="klarna">Klarna</label>
+                <input type="radio" id="paypal" name="betalningsmetod" value="paypal"> <label for="paypal">PayPal</label>
+                <input type="radio" id="kort" name="betalningsmetod" value="kort"> <label for="kort">Kort</label>
+            </div>
+        </div>        
         </div>
     </div>
     </main>
