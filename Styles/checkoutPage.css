@@ -14,6 +14,7 @@ html {
 }
 body {
   width: 100%;
+  margin: 0;
 }
 
 /*---------------------------BANNER--------------------------------------------------*/
@@ -148,13 +149,12 @@ a:hover {
 /*---------------------------MAIN--------------------------------------------------*/
 
 main {
-  margin: 5rem 12rem;
 }
 
 main h3 {
-  max-width: 1500px;
   margin: auto;
   margin-bottom: 5rem;
+  margin-top: 3rem;
   text-align: center;
   font-weight: 600 !important;
   font-size: 3rem;
@@ -187,7 +187,7 @@ main h3 {
 
 .breakpoint-text {
   font-size: 14px;
-  color: #000;
+  color: black;
 }
 
 .form-content {
