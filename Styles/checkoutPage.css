@@ -218,6 +218,19 @@ main h3 {
     margin-right: 3%;
 }
 
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+.radio-group label {
+  font-size: .9rem;
+}
+
 /*---------------------------FOOTER--------------------------------------------------*/
 .footer {
   display: flex;
@@ -227,8 +240,6 @@ main h3 {
   background-color: var(--barbypink);
   color: white;
   align-items: center;
-  position: absolute;
-  bottom: 0;
 }
 
 .footer h3 {
