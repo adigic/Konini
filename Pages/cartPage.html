@@ -49,7 +49,7 @@
       </div>
       <nav class="navbar">
         <div class="loginlink">
-          <a href=""><i class='bx bx-user'></i></a>
+          <a href=""><i class="bx bx-user"></i></a>
           <a href=""><span>LOGGA IN</span></a>
           <p>|</p>
           <a href=""><span>REGISTRERA DIG</span></a>
@@ -59,35 +59,158 @@
           <li>
             <a href="">POPULÄRT</a>
           </li>
-          <li><a href="">KATEGORIER</a></li>
-          <li><a href="">VARUMÄRKEN</a></li>
+          <li class="dropdown">
+            <button class="dropbtn">KATEGORIER</button>
+            <div class="dropdown-content">
+              <a href="/pages/galleryPage.html">Alla Produkter</a>
+              <a href="#">Klänningar</a>
+              <a href="#">T-Shirts</a>
+            </div>
+          </li>
+          <li><a href="brandPage.html">VARUMÄRKEN</a></li>
           <li>
             <a href=""><span class="reatext">REA</span></a>
           </li>
-          <li class="search"><a href=""><i class="bx bx-search"></i></a></li>
+          <li class="search">
+            <a href=""><i class="bx bx-search"></i></a>
+          </li>
         </ul>
 
         <div class="cartlink">
           <span><a href="">0.00 SEK</a></span>
-          <a href="/cartPage.html"><i class="bx bxs-cart"></i></a>
+          <a href="cartPage.html"><i class="bx bxs-cart"></i></a>
         </div>
       </nav>
     </header>
     <main>
-
-      <h3>Kundvagn</h3>
-
-      <div class="topText">
-        <div class="left">
-        <h5>Produkt</h5>
-      </div>
-      <div class="right">
-        <h5>Storlek</h5>
-        <h5>Pris</h5>
-        <h5>Summa</h5>
-      </div>
+      <div class="top-content">
+        <h3>Kundvagn</h3>
+        <a href="checkout.html"><button class="continue-button btn btn-primary">GÅ VIDARE</button></a>
       </div>
 
+      <div class="container">
+        <div class="site-main-content">
+          <div class="col-sm-12">
+            <table class="table checkout-cart hidden-xs hidden-sm">
+              <thead>
+                <tr>
+                  <th colspan="2">Produkt</th>
+                  <th>Storlek</th>
+                  <th>Pris</th>
+                  <th class="text-right checkout-cart__last-column">Summa</th>
+                </tr>
+              </thead>
+              <tbody class="cart-card-table">
+                <tr>
+                  <td class="product" rowspan="2">
+                    <a href="">
+                      <img src="/Images/golden spice dress.avif" alt="" />
+                    </a>
+                  </td>
+                  <td class="no-border">
+                    <a href="#" class="cart-card-table__name"
+                      >Golden spice dress</a
+                    >
+                    <p class="cart-card-table__article">
+                      Artikelnummer: 8714592
+                    </p>
+                  </td>
+                  <td class="no-border">
+                    <p class="cart-card-table__size">XS</p>
+                    <p class="cart-card-table__variant">Strong Yellow</p>
+                  </td>
+                  <td class="no-border">
+                    <span class="cart-card-table__price price">
+                      <span>499</span>
+                      <span class="currency-large">:-</span>
+                    </span>
+                  </td>
+                  <td class="no-border">
+                    <div class="cart-card-table__edit">
+                      <button type="button" class="btn-icon">
+                        <span class="btn-icon__text">Redigera</span>
+                        <span class="btn-icon__icon">
+                          <i class="bx bx-edit"></i>
+                        </span>
+                      </button>
+                      <button type="button" class="btn-icon">
+                        <span class="btn-icon__text">Ta bort</span>
+                        <span class="btn-icon__icon">
+                          <i class="bx bx-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right">
+                    <div class="cart-card-table__subtotal">
+                      1 antal
+                      <span class="price">
+                        <span>499</span>
+                        <span class="currency-large">:-</span>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="checkout-cart visible-sm visible-xs"></div>
+          </div>
+
+          <div class="checkout">
+            <div class="col-xs-12 fill--half-width left">
+              <div
+                class="accordion__promocodes accordion--bordered vue-app accordion accordion--transition"
+              >
+                <div class="accordion__button">
+                  Lägg till rabattkod
+                  <i class="bx bx-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 fill--half-width right">
+              <div class="checkout-totals">
+                <div class="checkout-totals__details-section">
+                  <div class="checkout-totals__details-row text-bold">
+                    <div class="checkout-totals__details-label">
+                      Artiklar i kundvagnen
+                    </div>
+                    <div class="checkout-totals__details-price">
+                      <span class="price">
+                        <span>499,00</span>
+                        <span class="currency-large"> SEK</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout-totals__sum-section">
+                  <div class="checkout-totals__total-sum">
+                    <div class="checkout-totals__total-sum-label">
+                      Totalsumma
+                    </div>
+                    <div class="checkout-totals__total-sum-price">
+                      <span class="price">
+                        <span>499,00</span>
+                        <span class="currency-large"> SEK</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="checkout-totals__helptext">
+                    Fraktkostnader kan tillkomma.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -109,7 +232,9 @@
             <h3>FÖLJ OSS</h3>
             <div class="social">
               <a href=""><i class="bx bxl-facebook-square"></i></a>
-              <a href=""><span><i class="bx bxl-youtube"></i></span></a>
+              <a href=""
+                ><span><i class="bx bxl-youtube"></i></span
+              ></a>
               <a href=""><i class="bx bxl-instagram-alt"></i></a>
             </div>
           </ul>
