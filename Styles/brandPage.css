@@ -155,21 +155,21 @@
   }
   .b-box{
     display: flex;
-    background-color: rgba(240, 248, 255, 0.747);
+    background-color: rgba(226, 190, 224, 0.377);
   }
   .c-box{
     display: flex;
   }
   .d-box{
     display: flex;
-    background-color: rgba(240, 248, 255, 0.747);
+    background-color: rgba(226, 190, 224, 0.377);
   }
   .e-box{
     display: flex;
   }
   .f-box{
     display: flex;
-    background-color: rgba(240, 248, 255, 0.747);
+    background-color: rgba(226, 190, 224, 0.377);
   }
   .g-box{
     display: flex;
@@ -178,7 +178,7 @@
     width:75px;
     font-size: 100px;
     color:#00000034;
-    margin: auto 6%;
+    margin: 2% 10%;
     padding-bottom: 50px;
     padding-top: 50px;
   }
