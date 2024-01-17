@@ -132,7 +132,7 @@
   }
   
   .navbar li,
-  a {
+  .navbar a {
     color: var(--textcolor) !important;
     text-decoration: none !important;
     font-weight: 600;
@@ -150,6 +150,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
 .dropbtn {
@@ -302,110 +303,119 @@
     margin-bottom: 50px;
   }
   
-  /*---------------------------FOOTER--------------------------------------------------*/
-  .footer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 20px;
-    background-color: var(--barbypink);
-    color: white;
-    align-items: center;
-    bottom: 0;
-  }
-  
-  .footer h3 {
-    font-size: 1.7rem;
-  }
-  
-  .footer ul {
-    margin: 0;
-  }
-  
-  .footer li {
-    font-size: 1.2rem;
-    line-height: 1.3;
-    list-style: none;
-    padding: 2px;
-    font-weight: 200 !important;
-  }
-  
-  .footer li:hover {
-    transition: 0.2s;
-    cursor: pointer;
-    color: var(--highlight) !important;
-  }
-  
-  .footer .left {
-    display: flex;
-    padding: 20px;
-    left: 20px;
-  }
-  
-  .customerService,
-  .socials {
-    padding-left: 8rem;
-  }
-  
-  .social {
-    display: flex;
-    padding: 0;
-  }
-  
-  .social a {
-    color: white !important;
-  }
-  
-  .social a:hover {
-    transition: 0.2s;
-    cursor: pointer;
-    color: var(--highlight) !important;
-  }
-  .social i {
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .social span i {
-    font-size: 4rem;
-  }
-  
-  .footer .right {
-    position: absolute;
-    right: 50px;
-  }
-  
-  .trustpilot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  
-  .trustpilot ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding-left: 25px;
-  }
-  
-  .trustpilot h3 {
-    margin-bottom: 25px;
-  }
-  
-  .trustpilot p {
-    text-align: center;
-    margin: 0;
-    font-size: 0.8rem;
-  }
-  
-  .trustpilot ul img {
-    width: 40px;
-    height: 40px;
-  }
+/*---------------------------FOOTER--------------------------------------------------*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--barbypink);
+  color: white;
+  align-items: center;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+}
+
+.footer ul {
+  margin: 0;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.footer li {
+  font-size: 1rem;
+  line-height: 1.3;
+  list-style: none;
+  padding: 2px;
+  font-weight: 200 !important;
+}
+
+.footer li:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: var(--highlight) !important;
+}
+
+.footer .left {
+  display: flex;
+  padding: 20px;
+  left: 20px;
+}
+
+.customerService,
+.socials {
+  padding-left: 4rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  color: white !important;
+  transition: 0.2s ease-in-out;
+}
+
+.social a:hover {
+  cursor: pointer;
+  color: var(--highlight) !important;
+  transform: translateY(-5px);
+  text-shadow: -1px 30px 4px rgba(0, 0, 0, 0.419);
+}
+.social i {
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.social span i {
+  font-size: 2.7rem;
+  padding-bottom: 3.5px;
+}
+
+.footer .right {
+  right: 50px;
+}
+
+.trustpilot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.trustpilot ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 25px;
+}
+
+.trustpilot h3 {
+  margin-bottom: 25px;
+}
+
+.trustpilot p {
+  text-align: center;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.trustpilot ul img {
+  width: 40px;
+  height: 40px;
+}
   
   /*---------------------------MediaQuery Header--------------------------------------------------*/
   @media only screen and (max-width: 600px) {

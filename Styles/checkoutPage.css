@@ -132,7 +132,7 @@ body {
 }
 
 .navbar li,
-a {
+.navbar a {
   color: var(--textcolor) !important;
   text-decoration: none !important;
   font-weight: 600;
@@ -311,6 +311,12 @@ main h3 {
 
 .footer ul {
   margin: 0;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+
 }
 
 .footer li {

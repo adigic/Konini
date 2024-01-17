@@ -131,7 +131,7 @@ body {
 }
 
 .navbar li,
-a {
+.navbar a {
   color: var(--textcolor) !important;
   text-decoration: none !important;
   font-weight: 600;
@@ -200,6 +200,19 @@ main {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.container a {
+  color: var(--textcolor) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  list-style: none;
+}
+
+.container a:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: var(--hovercolor) !important;
 }
 .top-content {
   display: flex;
@@ -440,6 +453,12 @@ section{
 
 .footer ul {
   margin: 0;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+
 }
 
 .footer li {
