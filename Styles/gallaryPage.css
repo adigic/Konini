@@ -51,10 +51,7 @@
   transition: 0.5s ease-in-out;
 }
 /*Product IMG*/
-.img-container {
-}
-
-.productList img {
+.img-container img {
   width: 150px;
   height: 200px;
   border: 1px solid #d1d1d1;
