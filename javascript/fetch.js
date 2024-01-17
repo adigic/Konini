@@ -12,24 +12,30 @@ function displayProducts(productArray) {
     productType.textContent = `${product.Type}`;
 
     const productColor = document.createElement("p");
-    productColor.textContent = `Color: ${product.Color}`;
+    productColor.textContent = `${product.Color}`;
 
     const productPrice = document.createElement("h5");
-    productPrice.textContent = `Price: ${product.Price}`;
+    productPrice.textContent = `${product.Price}:-`;
 
     // Skapa en div för img-elementet
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("img-container"); // Add class name here.
 
+    // Skapa en div för info-elementen
+    const infoContainer = document.createElement("div");
+    infoContainer.classList.add("info-container"); // Add class name here.
+
     const productImage = document.createElement("img");
     productImage.src = product.Image;
     // Lägg till img-element i imgContainer-div
     imgContainer.appendChild(productImage);
+    // Lägg till element i infoContainer-div
+    infoContainer.appendChild(productType);
+    infoContainer.appendChild(productColor);
+    infoContainer.appendChild(productPrice);
     // Lägg till alla element
     listItem.appendChild(imgContainer);
-    listItem.appendChild(productType);
-    listItem.appendChild(productColor);
-    listItem.appendChild(productPrice);
+    listItem.appendChild(infoContainer);
 
     // Lägger till click event listener för att hantera klick på varje produkt
     listItem.addEventListener("click", () => {
