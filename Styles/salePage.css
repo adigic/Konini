@@ -16,6 +16,8 @@ body {
   width: 100%;
 }
 
+
+
 /*---------------------------BANNER--------------------------------------------------*/
 .Bannertop {
   display: flex;
@@ -189,6 +191,41 @@ a:hover {
 
 /*---------------------------MAIN--------------------------------------------------*/
 
+main {
+  max-width: 1500px;
+  margin: auto;
+  justify-content: center;
+}
+
+.topBanner{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.topBanner img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.saleContainer{
+  background-color: #941b49;
+  padding: 10rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.saleContainer h1{
+  font-size: 100px;
+  margin: 0;
+}
+
+.saleContainer h4{
+  font-size: 16px;
+}
+
 /*----PRODUCT CARD HAR SIN EGNA CSS SOM LÄNKAS PÅ DE SIDOR SOM ANVÄNDER DOM----*/
 
 
@@ -307,6 +344,7 @@ a:hover {
 }
 
 /*---------------------------MediaQuery Header--------------------------------------------------*/
+
 @media only screen and (min-width: 1125px) {
   .footer .right {
     position: absolute;
@@ -335,6 +373,14 @@ a:hover {
   .sale-container{
     display: flex;
   }
+
+}
+
+@media only screen and (max-width: 1600px) {
+  .topBanner{
+    scale: 0.8;
+  }
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -389,7 +435,32 @@ a:hover {
     margin: none;
   }
 
+  .topBanner{
+    scale: 0.7;
+  }
 }
+
+@media only screen and (max-width: 900px) {
+  .loginlink,
+  .cartlink span {
+    display: none;
+  }
+  .navbar {
+    justify-content: center;
+  }
+
+  .loginnavbar ul {
+    display: none;
+  }
+  .Bannertop p {
+    font-size: 12px;
+  }
+  .topBanner{
+    scale: 0.6;
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
   .navbar {
     display: none;
@@ -423,24 +494,12 @@ a:hover {
   .trustpilot ul {
     display: none;
   }
-}
-
-@media only screen and (max-width: 900px) {
-  .loginlink,
-  .cartlink span {
-    display: none;
-  }
-  .navbar {
-    justify-content: center;
-  }
-
-  .loginnavbar ul {
-    display: none;
-  }
-  .Bannertop p {
-    font-size: 12px;
+  .topBanner{
+    scale: 0.;
   }
 }
+
+
 
 /*---------------------------MediaQuery Footer--------------------------------------------------*/
 @media (min-width: 1940px) {
@@ -469,4 +528,5 @@ a:hover {
   .container {
     width: 720px;
   }
+
 }

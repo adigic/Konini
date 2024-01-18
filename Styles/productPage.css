@@ -417,7 +417,39 @@
   height: 40px;
 }
   
+
   /*---------------------------MediaQuery Header--------------------------------------------------*/
+
+  @media only screen and (min-width: 1125px) {
+    .footer .right {
+      position: absolute;
+    }
+
+  }
+  
+  @media only screen and (max-width: 1124px) {
+    .footer {
+      flex-direction: column;
+    }
+  
+    .right {
+      margin: 50px;
+    }
+  
+    .trustpilot {
+      display: block;
+      text-align: center;
+    }
+  
+    .trustpilot h3 {
+      margin-left: 25px;
+    }
+  
+    .bannerLeft,.bannerRight{
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     .navbar {
       display: none;
