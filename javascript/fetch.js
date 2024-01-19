@@ -91,7 +91,29 @@ const categoryTitleElement = document.getElementById("categoryTitle");
 
 function updateCategoryTitle(category) {
   const categoryTitleElement = document.getElementById("categoryTitle");
-  categoryTitleElement.textContent = category; // Update the title with the selected category
+
+  // Switch for kategori titel
+  switch (category.toLowerCase()) {
+    case "products":
+      categoryTitleElement.textContent = "Alla Produkter";
+      break;
+    case "dresses":
+      categoryTitleElement.textContent = "Klänningar";
+      break;
+    case "skirts":
+      categoryTitleElement.textContent = "Kjolar";
+      break;
+    case "shirts":
+      categoryTitleElement.textContent = "Skjortor";
+      break;
+    case "tops":
+      categoryTitleElement.textContent = "Toppar";
+      break;
+    default:
+      // For other categories, use the category name as is
+      categoryTitleElement.textContent = category;
+      break;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
