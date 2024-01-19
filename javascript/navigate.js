@@ -17,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function navigateToGallery(category) {
+  //Navigera till Gallerypage och skicka med vilken category som valts
   window.location.href = `../Pages/galleryPage.html?category=${category}`;
 }
