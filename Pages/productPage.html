@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KoniniShop</title>
-    <link rel="stylesheet" href="../Styles/productPage.css">
+    <link rel="stylesheet" href="../Styles/productPage.css" />
+    <script src="/javascript/navigate.js" defer></script>
     <script src="/javascript/home.js" defer></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -49,7 +50,7 @@
       </div>
       <nav class="navbar">
         <div class="loginlink">
-          <a href=""><i class='bx bx-user'></i></a>
+          <a href=""><i class="bx bx-user"></i></a>
           <a href=""><span>LOGGA IN</span></a>
           <p>|</p>
           <a href=""><span>REGISTRERA DIG</span></a>
@@ -60,9 +61,11 @@
           <li class="dropdown">
             <button class="dropbtn">KATEGORIER</button>
             <div class="dropdown-content">
-              <a href="/pages/galleryPage.html">Alla Produkter</a>
-              <a href="#">Klänningar</a>
-              <a href="#">T-Shirts</a>
+              <a href="#" id="allProductsButton">Alla Produkter</a>
+              <a href="#" id="dressesButton">Klänningar</a>
+              <a href="#" id="skirtsButton">Kjolar</a>
+              <a href="#" id="shirtsButton">Skjortor</a>
+              <a href="#" id="topsButton">Toppar</a>
             </div>
           </li>
           <li><a href="brandPage.html">VARUMÄRKEN</a></li>
@@ -72,7 +75,9 @@
           <li>
             <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
           </li>
-          <li class="search"><a href=""><i class="bx bx-search"></i></a></li>
+          <li class="search">
+            <a href=""><i class="bx bx-search"></i></a>
+          </li>
         </ul>
 
         <div class="cartlink">
@@ -82,83 +87,140 @@
       </nav>
     </header>
     <main>
-      
-        <div class="product-container">
-         
-
-          <div id="carouselExampleIndicators" class="carousel slide">
-      
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../Images/dress1.jpeg" class="product-img d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Images/dress2.jpeg" class="product-img d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../Images/dress3.jpeg" class="product-img d-block w-100" alt="...">
-              </div>
+      <div class="product-container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../Images/dress1.jpeg"
+                class="product-img d-block w-100"
+                alt="..."
+              />
             </div>
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
-                <img src="../Images/dress1.jpeg" class="d-block w-100" alt="...">
-              </button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
-                <img src="../Images/dress2.jpeg" class="d-block w-100" alt="...">
-              </button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
-                <img src="../Images/dress3.jpeg" class="d-block w-100" alt="...">
-              </button>
+            <div class="carousel-item">
+              <img
+                src="../Images/dress2.jpeg"
+                class="product-img d-block w-100"
+                alt="..."
+              />
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <div class="carousel-item">
+              <img
+                src="../Images/dress3.jpeg"
+                class="product-img d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active thumbnail"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              <img
+                src="../Images/dress1.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              class="thumbnail"
+              aria-label="Slide 2"
+            >
+              <img
+                src="../Images/dress2.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              class="thumbnail"
+              aria-label="Slide 3"
+            >
+              <img
+                src="../Images/dress3.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
             </button>
           </div>
-
-
-
-
-          <div class="product-information">
-            <section>
-              <h1>Konini dress</h1>
-              <h2>399:-</h2>
-              <form action="">
-                <p>Välj storlek:</p>
-                <div class="button-wrapper">
-                  <button>XS</button>
-                  <button>S</button>
-                  <button>M</button>
-                  <button>L</button>
-                  <button>XL</button>
-                </div>
-                <button class="addcart-button btn btn-primary">Lägg i varukorgen</button>
-              </form>
-              <div class="product-info">
-                <h4>Produktinformation</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod atque laborum beatae delectus. Excepturi vel provident harum ut nobis, maiores facere tenetur earum tempora quis ullam culpa architecto ducimus eaque.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod atque laborum beatae delectus. Excepturi vel provident harum ut nobis, maiores facere tenetur earum tempora quis ullam culpa architecto ducimus eaque.</p>                
-              </div>
-            </section>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
-        <div class="recommended-container">
-          <h2>Rekommenderade produkter</h2>
-          <div class="recommended-gallery">
-            <img src="../Images/dress1.jpeg" alt="">
-            <img src="../Images/dress1.jpeg" alt="">
-            <img src="../Images/dress1.jpeg" alt="">
-            <img src="../Images/dress1.jpeg" alt="">
-            <img src="../Images/dress1.jpeg" alt="">
-            <img src="../Images/dress1.jpeg" alt="">
-          </div>
+        <div class="product-information">
+          <section>
+            <h1>Konini dress</h1>
+            <h2>399:-</h2>
+            <form action="">
+              <p>Välj storlek:</p>
+              <div class="button-wrapper">
+                <button>XS</button>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+              </div>
+              <button class="addcart-button btn btn-primary">
+                Lägg i varukorgen
+              </button>
+            </form>
+            <div class="product-info">
+              <h4>Produktinformation</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                atque laborum beatae delectus. Excepturi vel provident harum ut
+                nobis, maiores facere tenetur earum tempora quis ullam culpa
+                architecto ducimus eaque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                atque laborum beatae delectus. Excepturi vel provident harum ut
+                nobis, maiores facere tenetur earum tempora quis ullam culpa
+                architecto ducimus eaque.
+              </p>
+            </div>
+          </section>
         </div>
+      </div>
 
+      <div class="recommended-container">
+        <h2>Rekommenderade produkter</h2>
+        <div class="recommended-gallery">
+          <img src="../Images/dress1.jpeg" alt="" />
+          <img src="../Images/dress1.jpeg" alt="" />
+          <img src="../Images/dress1.jpeg" alt="" />
+          <img src="../Images/dress1.jpeg" alt="" />
+          <img src="../Images/dress1.jpeg" alt="" />
+          <img src="../Images/dress1.jpeg" alt="" />
+        </div>
+      </div>
     </main>
 
     <footer>

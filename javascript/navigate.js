@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function navigateToGallery(category) {
-  window.location.href = `./Pages/galleryPage.html?category=${category}`;
+  window.location.href = `../Pages/galleryPage.html?category=${category}`;
 }

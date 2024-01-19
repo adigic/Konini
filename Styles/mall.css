@@ -151,11 +151,6 @@ a:hover {
   position: relative;
   display: inline-block;
 }
-
-.allSpan {
-  background-color: #941b49 !important;
-}
-
 .dropbtn {
   color: var(--textcolor);
   background-color: white;
