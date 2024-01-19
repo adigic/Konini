@@ -1,11 +1,7 @@
 .section1 {
   width: 100%;
   height: 60vh;
-  display: flex;
-  justify-content: center;
-}
-
-.Contact-title {
+  padding: 25px;
   display: flex;
   justify-content: center;
 }
@@ -13,27 +9,38 @@
 .content-left {
   display: flex;
   flex-direction: column;
-  width: 30%;
+
+  width: 50%;
+  max-height: 600px;
   margin-left: 100px;
 }
-.Content-container {
+.content-container {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
+  padding: 25px;
+}
+
+.content-container p {
+  font-weight: 500;
+}
+.content-container h3 {
+  font-weight: bold;
 }
 .content1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 0 30px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.486);
 }
+
 .content2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px 0 60px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.486);
 }
 .content3 {
   border: none;
@@ -48,7 +55,7 @@
   display: flex;
   justify-content: right;
 
-  width: 30%;
+  width: 40%;
 }
 /*-----------------------------------------------Contact FORM-----------------------------------------------------------------------*/
 .form-container {
@@ -66,6 +73,11 @@ form {
 
 .form-top {
   display: flex;
+  justify-content: center;
+}
+
+.form-top span {
+  color: var(--barbypink);
 }
 .form-middle {
   display: flex;
@@ -86,15 +98,15 @@ form label {
 }
 
 form input {
-  border: 1px solid gray;
-  width: 300px;
+  border: 1px solid rgba(128, 128, 128, 0.486);
+  max-width: 400px;
   height: 40px;
   margin: 10px 0 10px 0;
 }
 
 form textarea {
-  border: 1px solid gray;
-  width: 300px;
+  border: 1px solid rgba(128, 128, 128, 0.486);
+  max-width: 400px;
   height: 100px;
   margin-bottom: 10px;
 }
@@ -119,21 +131,22 @@ form button {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 0;
   }
 
-  .Content-container {
+  .content-container {
     width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
-
+    background-color: rgba(128, 128, 128, 0.363);
     flex-direction: row;
   }
 
-  .Content-container h3 {
+  .content-container h3 {
     font-size: 16px;
   }
-  .Content-container p {
+  .content-container p {
     font-size: 12px;
   }
 
