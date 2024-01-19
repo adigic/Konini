@@ -48,11 +48,60 @@ function displayProducts(productArray) {
   ProductListElement.appendChild(productList);
 }
 
-// Hämta products från servern när sidan laddas
-fetch("http://localhost:3000/Products")
-  .then((res) => res.json())
-  .then((productServer) => {
-    // Visa products från data.json
-    displayProducts(productServer);
-  })
-  .catch((err) => console.log("error" + err));
+// Function to fetch products based on category
+function fetchProductsByCategory(category) {
+  return fetch(`http://localhost:3000/${category}`)
+    .then((res) => res.json())
+    .catch((err) => console.log(`Error fetching ${category}:`, err));
+}
+
+// Function to handle button click and fetch/display products
+function handleCategoryButtonClick(category) {
+  const productListElement = document.getElementById("productList");
+  productListElement.innerHTML = "";
+
+  updateCategoryTitle(category);
+
+  fetchProductsByCategory(category)
+    .then((products) => displayProducts(products))
+    .catch((error) =>
+      console.error(`Error fetching or displaying ${category}:`, error)
+    );
+}
+
+// Event listeners for category buttons
+document
+  .getElementById("allProductsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Products"));
+
+document
+  .getElementById("dressesButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Dresses"));
+document
+  .getElementById("skirtsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Skirts"));
+document
+  .getElementById("shirtsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Shirts"));
+document
+  .getElementById("topsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Tops"));
+
+const categoryTitleElement = document.getElementById("categoryTitle");
+
+function updateCategoryTitle(category) {
+  const categoryTitleElement = document.getElementById("categoryTitle");
+  categoryTitleElement.textContent = category; // Update the title with the selected category
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the category from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category");
+
+  if (category) {
+    // Fetch and display products for the selected category
+
+    handleCategoryButtonClick(category);
+  }
+});

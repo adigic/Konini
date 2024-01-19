@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KoniniShop</title>
     <link rel="stylesheet" href="/Styles/mall.css" />
-    <link rel="stylesheet" href="/Styles/gallaryPage.css"/>
-    <link rel="stylesheet" href="/Styles/productCard.css"/>
+    <link rel="stylesheet" href="/Styles/gallaryPage.css" />
+    <link rel="stylesheet" href="/Styles/productCard.css" />
     <script src="/javascript/fetch.js" defer></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -51,7 +51,7 @@
       </div>
       <nav class="navbar">
         <div class="loginlink">
-          <a href=""><i class='bx bx-user'></i></a>
+          <a href=""><i class="bx bx-user"></i></a>
           <a href=""><span>LOGGA IN</span></a>
           <p>|</p>
           <a href=""><span>REGISTRERA DIG</span></a>
@@ -62,9 +62,11 @@
           <li class="dropdown">
             <button class="dropbtn">KATEGORIER</button>
             <div class="dropdown-content">
-              <a href="/pages/galleryPage.html">Alla Produkter</a>
-              <a href="#">Klänningar</a>
-              <a href="#">T-Shirts</a>
+              <a href="#" id="allProductsButton">Alla Produkter</a>
+              <a href="#" id="dressesButton">Klänningar</a>
+              <a href="#" id="skirtsButton">Kjolar</a>
+              <a href="#" id="shirtsButton">Skjortor</a>
+              <a href="#" id="topsButton">Toppar</a>
             </div>
           </li>
           <li><a href="brandPage.html">VARUMÄRKEN</a></li>
@@ -74,7 +76,9 @@
           <li>
             <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
           </li>
-          <li class="search"><a href=""><i class="bx bx-search"></i></a></li>
+          <li class="search">
+            <a href=""><i class="bx bx-search"></i></a>
+          </li>
         </ul>
 
         <div class="cartlink">
@@ -84,7 +88,7 @@
       </nav>
     </header>
     <main>
-      <div class="Products-titel"><h2>All Products</h2></div>
+      <div id="categoryTitle" class="Products-titel"><h2>All Products</h2></div>
 
       <div class="product-container">
         <div id="productList" class="productList"></div>

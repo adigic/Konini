@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/Styles/mall.css" />
     <link rel="stylesheet" href="/Styles/landingPage.css" />
     <script src="/javascript/home.js" defer></script>
+    <script src="/javascript/fetch.js" defer></script>
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -50,7 +52,7 @@
       </div>
       <nav class="navbar">
         <div class="loginlink">
-          <a href=""><i class='bx bx-user'></i></a>
+          <a href=""><i class="bx bx-user"></i></a>
           <a href=""><span>LOGGA IN</span></a>
           <p>|</p>
           <a href=""><span>REGISTRERA DIG</span></a>
@@ -61,9 +63,11 @@
           <li class="dropdown">
             <button class="dropbtn">KATEGORIER</button>
             <div class="dropdown-content">
-              <a href="/pages/galleryPage.html">Alla Produkter</a>
-              <a href="#">Klänningar</a>
-              <a href="#">T-Shirts</a>
+              <a href="#" id="allProductsButton">Alla Produkter</a>
+              <a href="#" id="dressesButton">Klänningar</a>
+              <a href="#" id="skirtsButton">Kjolar</a>
+              <a href="#" id="shirtsButton">Skjortor</a>
+              <a href="#" id="topsButton">Toppar</a>
             </div>
           </li>
           <li><a href="/pages/brandPage.html">VARUMÄRKEN</a></li>
@@ -73,7 +77,9 @@
           <li>
             <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
           </li>
-          <li class="search"><a href=""><i class="bx bx-search"></i></a></li>
+          <li class="search">
+            <a href=""><i class="bx bx-search"></i></a>
+          </li>
         </ul>
 
         <div class="cartlink">
@@ -86,9 +92,12 @@
     <main>
       <section>
         <div class="first-section">
-          <img src="Images/koninisale.avif" alt="">
+          <img src="Images/koninisale.avif" alt="" />
           <div class="sale-container">
-            <h1>SALE <br> 50%</h1>
+            <h1>
+              SALE <br />
+              50%
+            </h1>
           </div>
         </div>
       </section>
@@ -97,20 +106,28 @@
         <h2>Rekommenderat</h2>
         <div class="categories-container">
           <div class="category-card">
-            <img src="/Images/koninidress.avif" alt="">
-            <button type="button" class="category-btn btn btn btn-dark">Klänningar</button>
+            <img src="/Images/koninidress.avif" alt="" />
+            <button type="button" class="category-btn btn btn btn-dark">
+              Klänningar
+            </button>
           </div>
           <div class="category-card">
-            <img src="/Images/koninijacket.avif" alt="">
-            <button type="button" class="category-btn btn btn btn-dark">Skjortor</button>
+            <img src="/Images/koninijacket.avif" alt="" />
+            <button type="button" class="category-btn btn btn btn-dark">
+              Skjortor
+            </button>
           </div>
           <div class="category-card">
-            <img src="/Images/koniniskirt.avif" alt="">
-            <button type="button" class="category-btn btn btn btn-dark">Kjolar</button>
+            <img src="/Images/koniniskirt.avif" alt="" />
+            <button type="button" class="category-btn btn btn btn-dark">
+              Kjolar
+            </button>
           </div>
           <div class="category-card">
-            <img src="/Images/koninitopp.avif" alt="">
-            <button type="button" class="category-btn btn btn-dark">Toppar</button>
+            <img src="/Images/koninitopp.avif" alt="" />
+            <button type="button" class="category-btn btn btn-dark">
+              Toppar
+            </button>
           </div>
         </div>
       </section>
@@ -118,7 +135,9 @@
       <section>
         <div class="new-collection">
           <h2>POPULÄRAST JUST NU - KONINI COTTON COLLECTION</h2>
-          <button type="button" class="news-btn btn btn-dark">Se våra kunders favoriter</button>
+          <button type="button" class="news-btn btn btn-dark">
+            Se våra kunders favoriter
+          </button>
         </div>
       </section>
 
@@ -126,11 +145,21 @@
         <div class="climate-container">
           <div class="climate-text">
             <h4>Konini arbetar med vår planet i åtanke</h4>
-            <p>De utmaningar samhället står inför är inte små och alla måste göra vad de kan. Vi vet att tiden är knapp och vi är fast beslutna att agera för klimatet genom hela Koninis verksamhet. Klimatförändringarna berör alla världens regioner och utgör ett hot mot global utveckling. Produktion, transport, användning och kassering av våra produkter genererar en betydande mängd utsläpp av växthusgaser som bidrar till den globala uppvärmningen. På Konini stöttar vi FN:s globala mål för hållbar utveckling och våra åtgärder och mål är i linje med mål 13: Bekämpa klimatförändringarna.</p>
+            <p>
+              De utmaningar samhället står inför är inte små och alla måste göra
+              vad de kan. Vi vet att tiden är knapp och vi är fast beslutna att
+              agera för klimatet genom hela Koninis verksamhet.
+              Klimatförändringarna berör alla världens regioner och utgör ett
+              hot mot global utveckling. Produktion, transport, användning och
+              kassering av våra produkter genererar en betydande mängd utsläpp
+              av växthusgaser som bidrar till den globala uppvärmningen. På
+              Konini stöttar vi FN:s globala mål för hållbar utveckling och våra
+              åtgärder och mål är i linje med mål 13: Bekämpa
+              klimatförändringarna.
+            </p>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer>
