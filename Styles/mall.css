@@ -6,7 +6,8 @@
 }
 
 html {
-  --barbypink: #e0218a;
+  --barbypink: #ef56aa;
+  --transBarby: #ef56aa1f;
   --textcolor: #000000;
   --hovercolor: #e06cac;
   --highlight: #fff3d9;
