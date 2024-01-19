@@ -20,8 +20,9 @@ body {
 .Bannertop {
   display: flex;
   align-items: center;
-  background-color: #e0218a;
+  background-color: var(--barbypink);
   color: white;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -276,7 +277,6 @@ main {
   background-color: rgb(228, 224, 219);
 }
 
-
 /*---------------------------FOOTER--------------------------------------------------*/
 .footer {
   display: flex;
@@ -296,10 +296,9 @@ main {
   margin: 0;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: white;
-
 }
 
 .footer li {
@@ -396,9 +395,7 @@ main {
   .footer .right {
     position: absolute;
   }
-
 }
-
 
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -436,7 +433,8 @@ main {
     margin-left: 25px;
   }
 
-  .bannerLeft,.bannerRight{
+  .bannerLeft,
+  .bannerRight {
     display: none;
   }
 }

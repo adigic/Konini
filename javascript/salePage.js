@@ -49,7 +49,7 @@ function displaysaleProducts(productArray) {
 }
 
 // Hämta products från servern när sidan laddas
-fetch("http://localhost:4000/Sale")
+fetch("http://localhost:3000/Sale")
   .then((res) => res.json())
   .then((productServer) => {
     // Visa products från data.json
@@ -57,4 +57,4 @@ fetch("http://localhost:4000/Sale")
   })
   .catch((err) => console.log("error" + err));
 
-  // npx json-server --watch salePage.json --port 4000 // <-- Starta servern
+// npx json-server --watch salePage.json --port 4000 // <-- Starta servern
