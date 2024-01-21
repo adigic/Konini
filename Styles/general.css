@@ -145,6 +145,13 @@ a:hover {
   cursor: pointer;
   color: var(--hovercolor) !important;
 }
+
+
+/* NAVBAR HIGHLIGHT */
+#active{
+  color: var(--hovercolor) !important;
+}
+
 /*-----------------------DROPDOWN-----------------------------------------*/
 .dropdown {
   position: relative;
@@ -190,6 +197,7 @@ a:hover {
 main {
   max-width: 1500px;
   margin: auto;
+  margin-top: 3rem;
 }
 
 
