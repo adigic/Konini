@@ -67,3 +67,28 @@
 .img-container img:hover {
   scale: 1.05;
 }
+
+
+/*---- REA SPECIAL DESIGN ----*/
+
+.product-price{
+  display: flex;
+  gap: 5px;
+}
+
+.angled-line-through {
+  position: relative;
+}
+
+.angled-line-through::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1.3px;
+  background-color: black;
+  transform: rotate(-30deg);
+  transform-origin: 0 0;
+}
+
