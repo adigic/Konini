@@ -99,34 +99,39 @@
       "Image": "https://quickbutik.imgix.net/7579r/products/5d3579eb5b70b.jpeg?w=450&auto=format"
     },
     {
-      "Type": "Ricky Shirt",
-      "Color": "Serenity Stripes",
-      "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg"
+      "Type": "Richie Top",
+      "Color": "Off White Dot",
+      "Sale": "249",
+      "Price": "499",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d147de3b3649.jpeg?w=450&auto=format"
     },
     {
-      "Type": "Seth Playsuit",
+      "Type": "Kail Bodystocking",
+      "Color": "Rich Blue",
+      "Sale": "199",
+      "Price": "399",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256360873.jpeg?w=450&auto=format"
+    },
+    {
+      "Type": "Omar Shorts",
+      "Color": "Taffy",
+      "Sale": "199",
+      "Price": "399",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad4165d90b.jpeg?w=450&auto=format"
+    },
+    {
+      "Type": "Omar Shorts",
       "Color": "Navy Sky",
-      "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg"
+      "Sale": "199",
+      "Price": "399",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad3c40b5de.jpeg?w=450&auto=format"
     },
     {
-      "Type": "Olinda Print Dress",
-      "Color": "Circle Tiles",
+      "Type": "Geo Top",
+      "Color": "Blue Harbour",
+      "Sale": "99",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad0ea4dbf8.jpeg"
-    },
-    {
-      "Type": "Orleans Dress",
-      "Color": "Rose Passion",
-      "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5cb773a64c4c9.jpeg"
-    },
-    {
-      "Type": "Fardosa Print Top",
-      "Color": "Pale Floral",
-      "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d138068795a8.jpeg?w=450&auto=format"
     }
   ],
   "Dresses": [
