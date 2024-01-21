@@ -10,7 +10,7 @@ html {
   --transBarby: #ef56aa1f;
   --textcolor: #000000;
   --hovercolor: #ea3e9a;
-  --highlight: #fff3d9;
+  --highlight: #ffd59f;
   --reatext: red;
 }
 body {
@@ -26,17 +26,34 @@ body {
   padding: 10px;
 }
 
+.Bannertop a{
+  text-decoration: none;
+  display: flex;
+  color: white;
+}
+
+.Bannertop a:hover{
+  cursor: pointer;
+  color: var(--highlight);
+}
+
+.Bannertop i{
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
 .bannerLeft {
   position: absolute;
   left: 20px;
   display: flex;
-  gap: 25px;
 }
 
 .bannerRight {
   position: absolute;
   right: 20px;
+  display: flex;
 }
+
 
 .Bannertop p {
   font-size: 14px;
@@ -140,7 +157,7 @@ body {
 }
 
 .navbar span:hover,
-a:hover {
+.navbar a:hover {
   transition: 0.2s;
   cursor: pointer;
   color: var(--hovercolor) !important;
@@ -340,6 +357,14 @@ main {
   }
 }
 
+@media only screen and (max-width: 1325px) {
+
+  .bannerLeft,
+  .bannerRight {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1124px) {
   .footer {
     flex-direction: column;
@@ -356,11 +381,6 @@ main {
 
   .trustpilot h3 {
     margin-left: 25px;
-  }
-
-  .bannerLeft,
-  .bannerRight {
-    display: none;
   }
 }
 
