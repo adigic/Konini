@@ -6,9 +6,9 @@
   }
   
   html {
-    --barbypink: #e0218a;
+    --barbypink: #EF56AA;
     --textcolor: #000000;
-    --hovercolor: #e06cac;
+    --hovercolor: #ea3e9a;
     --highlight: #fff3d9;
     --reatext: red;
   }
@@ -303,6 +303,7 @@
     margin-bottom: 50px;
   }
   
+  
 /*---------------------------FOOTER--------------------------------------------------*/
 .footer {
   display: flex;
@@ -333,7 +334,7 @@
   line-height: 1.3;
   list-style: none;
   padding: 2px;
-  font-weight: 200 !important;
+  font-weight: 300 !important;
 }
 
 .footer li:hover {
