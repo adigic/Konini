@@ -14,8 +14,27 @@ function displaysaleProducts(productArray) {
     const productColor = document.createElement("p");
     productColor.textContent = `${product.Color}`;
 
+    // Skapa div för priser
+    const productPriceContainer = document.createElement("div");
+    productPriceContainer.classList.add("product-price");
+
+    const productSale = document.createElement("h5");
+    productSale.textContent = `${product.Sale}:-`;
+
+    // Set the color to red
+    productSale.style.color = "red";
+
     const productPrice = document.createElement("h5");
     productPrice.textContent = `${product.Price}:-`;
+
+    // Cross over original price
+    productPrice.classList.add("angled-line-through");
+
+
+    // Lägg till element i product-price div.
+    productPriceContainer.appendChild(productSale);
+    productPriceContainer.appendChild(productPrice);
+
 
     // Skapa en div för img-elementet
     const imgContainer = document.createElement("div");
@@ -32,7 +51,7 @@ function displaysaleProducts(productArray) {
     // Lägg till element i infoContainer-div
     infoContainer.appendChild(productType);
     infoContainer.appendChild(productColor);
-    infoContainer.appendChild(productPrice);
+    infoContainer.appendChild(productPriceContainer);
     // Lägg till alla element
     listItem.appendChild(imgContainer);
     listItem.appendChild(infoContainer);
@@ -57,4 +76,4 @@ fetch("http://localhost:3000/Sale")
   })
   .catch((err) => console.log("error" + err));
 
-// npx json-server --watch salePage.json --port 4000 // <-- Starta servern
+// npx json-server --watch data.json --port 3000 // <-- Starta servern
