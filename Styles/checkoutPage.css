@@ -21,7 +21,7 @@ body {
 .Bannertop {
   display: flex;
   align-items: center;
-  background-color: #e0218a;
+  background-color: var(--barbypink);
   color: white;
   padding: 10px;
 }
