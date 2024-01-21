@@ -21,6 +21,60 @@ main h3 {
   padding-bottom: 20px;
 }
 
+.payment-buttons #shopPayButton {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-buttons #shopPayButton:hover {
+  background-color: #4f49d2;
+}
+
+.payment-buttons #paypalButton {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffbb00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-buttons #paypalButton:hover {
+  background-color: #e09900;
+}
+
+.payment-buttons #googlePayButton {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-buttons #googlePayButton:hover {
+  background-color: #303030;
+}
+
 .line-container {
   position: relative;
 }
