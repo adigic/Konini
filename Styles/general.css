@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+ul {
+  padding-left: 0 !important;
+}
+
 /*---------------------------BANNER--------------------------------------------------*/
 .Bannertop {
   display: flex;
@@ -263,9 +267,10 @@ main {
   left: 20px;
 }
 
+
 .customerService,
 .socials {
-  padding-left: 4rem;
+  padding-left: 4rem !important;
 }
 
 .social {
@@ -313,7 +318,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-left: 25px;
+  padding-left: 25px !important;
 }
 
 .trustpilot h3 {
@@ -382,6 +387,7 @@ main {
   .trustpilot h3 {
     margin-left: 25px;
   }
+
 }
 
 @media only screen and (max-width: 900px) {
