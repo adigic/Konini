@@ -1,9 +1,10 @@
 {
   "Products": [
     {
-      "Type": "Geo Dress",
+      "Type": "Georr Dress",
       "Color": "Red",
-      "Price": "199",
+      "Sale": "200",
+      "Price": "400",
       "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256666512.jpeg?w=450&auto=format"
     },
     {
@@ -30,18 +31,7 @@
       "Price": "199",
       "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256781081.jpeg"
     },
-    {
-      "Type": "Ricky Shirt",
-      "Color": "Serenity Stripes",
-      "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg"
-    },
-    {
-      "Type": "Seth Playsuit",
-      "Color": "Navy Sky",
-      "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg"
-    },
+
     {
       "Type": "Olinda Print Dress",
       "Color": "Circle Tiles",
@@ -55,10 +45,58 @@
       "Image": "https://quickbutik.imgix.net/7579r/products/5cb773a64c4c9.jpeg"
     },
     {
+      "Type": "Rylee Skirt",
+      "Color": "Blue Harbour",
+      "Price": "449",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d20f4a847006.jpeg"
+    },
+    {
+      "Type": "Madonna Print Skirt",
+      "Color": "Flower Love",
+      "Price": "449",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256491625.jpeg"
+    },
+    {
+      "Type": "Fant Skirt",
+      "Color": "Flower Woven",
+      "Price": "199",
+      "Image": "https://image-resizing.booztcdn.com/en-fant/eft220346_crosedust_1.webp?has_grey=1&has_webp=1&dpr=2.5&size=w400"
+    },
+    {
+      "Type": "Ricky Shirt",
+      "Color": "Serenity Stripes",
+      "Price": "199",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg"
+    },
+    {
+      "Type": "Seth Playsuit",
+      "Color": "Navy Sky",
+      "Price": "199",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg"
+    },
+    {
       "Type": "Fardosa Print Top",
       "Color": "Pale Floral",
       "Price": "199",
       "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg"
+    },
+    {
+      "Type": "Ryder Shirt",
+      "Color": "Off White",
+      "Price": "299",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6ad4d7309.jpeg"
+    },
+    {
+      "Type": "Florina Shirt",
+      "Color": "Cornflower",
+      "Price": "199",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256542220.jpeg"
+    },
+    {
+      "Type": "Noa Top",
+      "Color": "Navy Sky",
+      "Price": "249",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780566.jpeg"
     }
   ],
 
@@ -192,6 +230,12 @@
       "Color": "Flower Love",
       "Price": "449",
       "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256491625.jpeg"
+    },
+    {
+      "Type": "Fant Skirt",
+      "Color": "Flower Woven",
+      "Price": "199",
+      "Image": "https://image-resizing.booztcdn.com/en-fant/eft220346_crosedust_1.webp?has_grey=1&has_webp=1&dpr=2.5&size=w400"
     }
   ],
   "Shirts": [
@@ -200,6 +244,18 @@
       "Color": "Serenity Stripes",
       "Price": "199",
       "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg"
+    },
+    {
+      "Type": "Ryder Shirt",
+      "Color": "Off White",
+      "Price": "299",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6ad4d7309.jpeg"
+    },
+    {
+      "Type": "Florina Shirt",
+      "Color": "Cornflower",
+      "Price": "199",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256542220.jpeg"
     }
   ],
 
@@ -215,6 +271,12 @@
       "Color": "Pale Floral",
       "Price": "199",
       "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg"
+    },
+    {
+      "Type": "Noa Top",
+      "Color": "Navy Sky",
+      "Price": "249",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780566.jpeg"
     }
   ]
 }
