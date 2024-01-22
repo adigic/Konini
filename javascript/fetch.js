@@ -87,12 +87,10 @@ document
   .getElementById("topsButton")
   .addEventListener("click", () => handleCategoryButtonClick("Tops"));
 
-const categoryTitleElement = document.getElementById("categoryTitle");
-
 function updateCategoryTitle(category) {
   const categoryTitleElement = document.getElementById("categoryTitle");
 
-  // Switch for kategori titel
+  // Switch Categori titel
   switch (category.toLowerCase()) {
     case "products":
       categoryTitleElement.textContent = "Alla Produkter";
