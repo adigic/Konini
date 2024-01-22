@@ -62,7 +62,7 @@
 }
 /*-----------------------------------------------Contact FORM-----------------------------------------------------------------------*/
 .form-container {
-  width: 400px;
+  width: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -72,6 +72,7 @@ form {
   display: flex;
   flex-direction: column;
   font-weight: 600;
+  min-width: 300px;
 }
 
 .form-top {
@@ -102,14 +103,14 @@ form label {
 
 form input {
   border: 1px solid rgba(128, 128, 128, 0.486);
-  max-width: 400px;
+  max-width: 500px;
   height: 40px;
   margin: 10px 0 10px 0;
 }
 
 form textarea {
   border: 1px solid rgba(128, 128, 128, 0.486);
-  max-width: 400px;
+  max-width: 500px;
   height: 100px;
   margin-bottom: 10px;
 }
