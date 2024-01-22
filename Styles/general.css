@@ -177,6 +177,7 @@ ul {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 .dropbtn {
   color: var(--textcolor);
@@ -392,7 +393,7 @@ main {
 }
 
 @media only screen and (max-width: 1024px) {
-  .loginlink,
+  .loginlink span, .loginlink p,
   .cartlink span {
     display: none;
   }
