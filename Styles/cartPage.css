@@ -234,18 +234,20 @@ section{
   object-fit: cover;
 }
 
-.sale-container {
+.saleContainer{
   background-color: #941b49;
-  width: 40%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding: 10rem;
+  color: white;
+  text-transform: uppercase;
 }
 
-.sale-container h1 {
-  text-align: center;
-  color: white;
-  font-size: 5rem;
+.saleContainer h1{
+  font-size: 100px;
+  margin: 0;
+}
+
+.saleContainer h4{
+  font-size: 16px;
 }
 
 
