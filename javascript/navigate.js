@@ -1,3 +1,4 @@
+// DROPDOWN Categorys NAVBAR
 document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("allProductsButton")
@@ -13,6 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", () => navigateToGallery("Shirts"));
   document
     .getElementById("topsButton")
+    .addEventListener("click", () => navigateToGallery("Tops"));
+
+  //Buttons Recommended landingPage
+  document
+    .getElementById("dressesButton2")
+    .addEventListener("click", () => navigateToGallery("Dresses"));
+  document
+    .getElementById("shirtsButton2")
+    .addEventListener("click", () => navigateToGallery("Shirts"));
+  document
+    .getElementById("skirtsButton2")
+    .addEventListener("click", () => navigateToGallery("Skirts"));
+  document
+    .getElementById("topsButton2")
     .addEventListener("click", () => navigateToGallery("Tops"));
 });
 
