@@ -1,0 +1,144 @@
+/* ------------------------- main -------------------------*/
+
+.main-container{
+    width:1090px;
+    margin:auto;
+}
+.main-container h2{
+    
+}
+.box1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    height: 750px;
+}
+.pinkbox{
+    background-color: rgb(255, 230, 242);
+    grid-row: 1/3;
+    grid-column:2/4;
+    text-align: start;
+}
+.pinkbox h4{
+    font-size: 34px;
+    font-weight: 300;
+    padding: 25px;
+    background-color: rgb(248, 204, 225);
+   
+
+}
+.pinkbox p{
+    padding-left: 30px;
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 200;
+}
+#pic1{
+    height:750px;
+    width: 460px;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+#pic2{
+    height:380px;
+    width: 315px;
+    grid-row:3/3;
+    grid-column: 2/3 ;
+    overflow:hidden;
+}
+#pic3{
+    height:380px;
+    width:315px;
+    grid-row: 3/3;
+    grid-column: 3/3;
+    overflow:hidden;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.maintitle{
+    font-size: 38px;
+    font-weight: 600;
+    padding-top: 35px;
+    border-bottom: solid black 3px;
+    width:435px;
+}
+#card1{
+    background-color: #DCEDD1;
+    border-radius: 0%;
+}
+#card2{
+    background-color: #CCE7DE;
+    border-radius: 0%;
+}
+#card3{
+    background-color: #BBE7F0;
+    border-radius: 0%;
+}
+.card-img-top{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0% !important;
+}
+.card-body{
+    height:100px;
+    padding:10px !important;
+}
+.card-text{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    
+}
+.card-undertext{
+    text-align: start;
+    font-size: 18px;
+}
+.socialbanner{
+    margin-top: 35px;
+    padding: 15px;
+    background-image: linear-gradient(rgb(248, 204, 225), rgb(255, 255, 255));
+    text-align: center;
+}
+.socialbanner h3{
+    padding-top:10px;
+    font-size: 45px;
+    font-weight: 200;
+}
+.socialbanner p {
+    font-size: 25px;
+    font-weight: 600;
+}
+.instabox{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 270px;
+    gap:10px;
+}
+.instabox img{
+    width:265px;
+    height:270px;
+    
+}
+#ig1{
+    grid-column: 1/4;
+    grid-row: 1/1;
+    
+}
+#ig2{
+    grid-column: 2/4;
+    grid-row: 1/1;
+}
+#ig3{
+    grid-column: 3/4;
+    grid-row: 1/1;
+}
+#ig4{
+    grid-column: 4/4;
+    grid-row: 1/1;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KoniniShop</title>
+    <link rel="stylesheet" href="/Styles/general.css" />
+    <link rel="stylesheet" href="/Styles/lookBook.css"/>
+    <script src="/javascript/navigate.js" defer></script>
+    <script src="/javascript/fetch.js" defer></script>
+    <script src="/javascript/tabs.js" defer></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Smooch+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="Bannertop">
+        <div class="bannerLeft">
+          <p>Fri frakt över 500kr</p><i class='bx bx-check'></i>
+          <p>Snabb leverans!</p><i class='bx bx-check'></i>
+        </div>
+        <p>
+          Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
+          returrätt | Fria returer i butik
+        </p>
+        <div class="bannerRight">
+          <a href="https://www.google.com/maps/place/Hantverkargatan+20,+112+21+Stockholm,+Sweden/@59.329005,18.044225,10z/data=!4m6!3m5!1s0x465f77d88fd15e99:0x2d75fa5edb3de9f7!8m2!3d59.3290047!4d18.0442246!16s%2Fg%2F11csmnj9cq?hl=en&entry=ttu" target="_blank"><p>Hitta butik!</p><i class='bx bx-map' ></i></a>
+        </div>
+      </div>
+      <div class="HeaderTop">
+        <img src="/images/LOGO.png" alt="" />
+      </div>
+      <nav class="navbar">
+        <div class="loginlink">
+          <a href=""><i class="bx bx-user"></i></a>
+          <a href=""><span>LOGGA IN</span></a>
+          <p>|</p>
+          <a href=""><span>REGISTRERA DIG</span></a>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">HEM</a></li>
+
+          <li class="dropdown">
+            <button class="dropbtn">KATEGORIER</button>
+            <div class="dropdown-content">
+              <a href="#" id="allProductsButton">Alla Produkter</a>
+              <a href="#" id="dressesButton">Klänningar</a>
+              <a href="#" id="skirtsButton">Kjolar</a>
+              <a href="#" id="shirtsButton">Skjortor</a>
+              <a href="#" id="topsButton">Toppar</a>
+            </div>
+          </li>
+          <li><a href="/pages/brandPage.html">VARUMÄRKEN</a></li>
+          <li>
+            <a href="/pages/lookBook.html">LOOKBOOK</a>
+          </li>
+          <li>
+            <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
+          </li>
+          <li class="search">
+            <a><i class="bx bx-search"></i></a>
+          </li>
+        </ul>
+
+        <div class="cartlink">
+          <span><a href="">0.00 SEK</a></span>
+          <a href="/pages/cartPage.html"><i class="bx bxs-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+
+        <div class="box1">
+            <div class="pinkbox">
+              <h4>VÅRENS TRENDIGASTE OUTFIT</h4>
+              <p>Matcha din outfit med skimriga metaller och <br> klackar. <br>
+              Har du en neutral bas så är det ett perfekt <br>tillfälle att 
+              lägga till en fägglad väska för att <br> pigga upp vardagen.</p>
+            </div>
+            <img src="/Images/engin-akyurt-jaZoffxg1yc-unsplash.jpg" alt="" id="pic1">
+            <img src="/Images/tamara-bellis-HY1fq4ZtLTE-unsplash.jpg" alt="" id="pic2">
+            <img src="/Images/apostolos-vamvouras-_pdbqMcNWus-unsplash.jpg" alt="" id="pic3">
+          </div>
+        
+        <h3 class="maintitle">KONINIS EXPERTPANEL</h3>
+        <div class="box2">
+            
+          <a style="text-decoration: none;" href="">
+            <div class="card" style="width: 22rem;" id="card1">
+                <img class="card-img-top" src="/Images/giulia-bertelli-_L8L_pfhC40-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                <p class="card-text">Såhär vårdar du dina ullplagg!</p>
+                <p class="card-undertext">- Experterna tipsar.</p>
+                </div>
+            </div>
+          </a>
+
+           <a style="text-decoration: none;" href=""> 
+              <div class="card" style="width: 22rem;" id="card2">
+                <img class="card-img-top" src="/Images/alex-quezada-qAyOt0aGsCo-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                <p class="card-text">Vårens bekvämaste klackar!</p>
+                <p class="card-undertext">- Vi har testat dom alla.</p>
+                </div>
+              </div>
+            </a>
+
+            <a style="text-decoration: none;" href="">
+              <div class="card" style="width: 22rem;" id="card3">
+                <img class="card-img-top" src="/Images/satria-perkasa-mJkuWrBj1wI-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                <p class="card-text">Tar du studenten i år?</p>
+                <p class="card-undertext">- Koninis stora examen-guide.</p>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+        <div class="socialbanner">
+          <h3>Hitta inspiration och följ oss!</h3>
+          <p>@Koninishop</p>
+        </div>
+
+        <div class="instabox">
+          <img src="/Images/instagirl.png" alt="" id="ig1">
+          <img src="/Images/instagirl2.png" alt="" id="ig2">
+          <img src="/Images/instagirl3.png" alt="" id="ig3">
+          <img src="/Images/instagirl4.png" alt="" id="ig4">
+        </div>
+
+    </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="left">
+          <ul class="konini">
+            <h3>KONINI</h3>
+            <li>Om oss</li>
+            <li>Partnerskap</li>
+            <li>Jobba hos oss</li>
+          </ul>
+          <ul class="customerService">
+            <h3>KUNDSERVICE</h3>
+            <a href="/pages/Contact.html"><li>Kontakta oss</li></a>
+            <li>Vanliga frågor & svar</li>
+            <li>Integritetspolicy</li>
+            <li>Cookie-policy</li>
+          </ul>
+          <ul class="socials">
+            <h3>FÖLJ OSS</h3>
+            <div class="social">
+              <a href="https://www.facebook.com/koninishop.se" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+              <a href=""
+                ><span><i class="bx bxl-youtube"></i></span
+              ></a>
+              <a href="https://www.instagram.com/koninishop" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="trustpilot">
+            <h3>Trustpilot</h3>
+            <ul>
+              <div>
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+                <img src="/images/Stjärna.png" alt="" />
+              </div>
+              <p>Utmärkt 5/5 - 1996 omdömen</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
