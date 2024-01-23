@@ -7,29 +7,34 @@ main {
   justify-content: center;
 }
 
-.topBanner{
+.first-section {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   height: 500px;
-  width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.topBanner img{
+.first-section img {
+  width: 60%;
   object-fit: cover;
-  width: 100%;
 }
 
-.saleContainer{
+.sale-container {
   background-color: #941b49;
-  padding: 10rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-transform: uppercase;
 }
 
-.saleContainer h1{
+.sale-container h1 {
+  text-align: center;
+  color: white;
   font-size: 100px;
-  margin: 0;
 }
 
 .saleContainer h4{
@@ -40,80 +45,74 @@ main {
 
 
 
-/*---------------------------MediaQuery Header--------------------------------------------------*/
+/*---- MEDIA QUERIES ----*/
 
-@media only screen and (min-width: 1125px) {
+@media only screen and (max-width: 1440px) {
 
   .first-section{
-    display: flex;
+    padding: 0 1rem;
   }
 
-  .first-section .logo{
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  .first-section{
+    height: 350px;
+  }
+
+  .first-section h1{
+    font-size: 5rem;
+  }
+
+  .first-section h4{
+    font-size: .9rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .first-section{
+    height: 250px;
+  }
+
+  .first-section h1{
+    font-size: 4rem;
+  }
+
+  .first-section h4{
+    font-size: .7rem;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+
+  nav{
     display: none;
   }
 
-  .sale-container{
-    display: flex;
+  .first-section{
+    height: 200px;
   }
 
-}
-
-@media only screen and (max-width: 1600px) {
-  .topBanner{
-    scale: 0.8;
+  .first-section h1{
+    font-size: 3rem;
   }
 
-}
-
-@media only screen and (max-width: 1124px) {
-
-  section{
-    margin: 0;
-  }
-
-  .first-section {
-    justify-content: center;
-    display: flex;
-    height: 400px;
-    align-items: center;
+  .first-section h4{
+    font-size: .4rem;
   }
   
-  .first-section img {
-    background-color: #941b49;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  
-  .sale-container {
-    display: none;
-    margin: none;
-  }
-
-  .topBanner{
-    scale: 0.7;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-
-  .topBanner{
-    scale: 0.6;
-  }
-}
-
-
-@media only screen and (max-width: 600px) {
-
-  .topBanner{
-    scale: 0.;
-  }
 }
 
 
 
-/*---------------------------MediaQuery Footer--------------------------------------------------*/
+/*-------------CONTAINER MEDIAQUERIES---------------*/
 @media (min-width: 1940px) {
   .container {
     width: 1600px;
