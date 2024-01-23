@@ -9,6 +9,7 @@
     <script src="/javascript/navigate.js" defer></script>
     <script src="/javascript/fetch.js" defer></script>
     <script src="/javascript/tabs.js" defer></script>
+    <script src="/javascript/sidemenu.js" defer></script>
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -61,6 +62,7 @@
         <img src="/images/LOGO.png" alt="" />
       </div>
       <nav class="navbar">
+        <div class="hamburger" id="openBtn"><i class='bx bx-menu'></i></div>
         <div class="loginlink">
           <a href=""><i class="bx bx-user"></i></a>
           <a href=""><span>LOGGA IN</span></a>
@@ -98,6 +100,39 @@
         </div>
       </nav>
     </header>
+
+    <!-- HAMBURGER MENU-->
+
+    <div class="sidemenu" id="sidemenu">
+      <div class="closemenu" id="closeBtn" onclick="closemenu()"><i class='bx bx-x'></i></div>
+      <!-- Använd samma a-taggar för sidomenyn -->
+<a href="../index.html" onclick="closemenu()">HEM</a>
+
+        <li class="dropdown">
+          <button class="dropbtn" onclick="closemenu()">KATEGORIER</button>
+          <div class="dropdown-content">
+            <a href="#" id="allProductsButton" onclick="closemenu()">Alla Produkter</a>
+            <a href="#" id="dressesButton" onclick="closemenu()">Klänningar</a>
+            <a href="#" id="skirtsButton" onclick="closemenu()">Kjolar</a>
+            <a href="#" id="shirtsButton" onclick="closemenu()">Skjortor</a>
+            <a href="#" id="topsButton" onclick="closemenu()">Toppar</a>
+          </div>
+        </li>
+<a href="/pages/brandPage.html" onclick="closemenu()">VARUMÄRKEN</a></li>
+
+          <a href="/pages/lookBook.html" onclick="closemenu()">LOOKBOOK</a>
+
+          <a href="/pages/salePage.html" onclick="closemenu()"><span class="reatext">REA</span></a>
+
+          <div class="user">
+          <a href="#">Logga in</a>
+          <a href="#">Registrera dig</a>
+        </div>
+
+      <!-- Du kan lägga till fler länkar här om det behövs -->
+    </div>
+
+    <!-- HAMBURGER MENU-->
 
     <main>
       <section>
