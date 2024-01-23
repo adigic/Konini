@@ -78,6 +78,7 @@ form {
 .form-top {
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 }
 
 .form-top span {
@@ -184,5 +185,8 @@ form button {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
+  .content-container {
+    flex-direction: column;
+  }
 }
