@@ -486,25 +486,9 @@ footer {
   .bannerRight {
     display: flex;
   }
-<<<<<<< HEAD
 }
-=======
 
-  .bannerLeft {
-    left: 10px;
-  }
-  
-  .bannerRight {
-    right: 10px;
-  }
 
-  .links{
-    display: none;
-  }
-
-   
-  }
->>>>>>> 7b1d4a7f8ed90d47430a4cb8131f22b3cbf8e386
 
 /*---------------------------MediaQuery Footer--------------------------------------------------*/
 @media only screen and (max-width: 600px) {
@@ -553,7 +537,7 @@ footer {
     margin: 10px 0;
   }
 }
-<<<<<<< HEAD
+
 
 @media only screen and (max-width: 425px) {
   .bannerLeft {
@@ -568,5 +552,3 @@ footer {
     display: none;
   }
 }
-=======
->>>>>>> 7b1d4a7f8ed90d47430a4cb8131f22b3cbf8e386
