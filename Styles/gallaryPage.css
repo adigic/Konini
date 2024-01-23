@@ -1,8 +1,7 @@
 /*----PRODUCT CARD HAR SIN EGNA CSS SOM LÄNKAS PÅ DE SIDOR SOM ANVÄNDER DOM----*/
 
 #categoryTitle {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 32px;
 }
 

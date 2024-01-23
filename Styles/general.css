@@ -471,6 +471,16 @@ footer {
     float: right;
     gap: 30px;
   }
+
+  .footer li {
+    font-weight: 300 !important;
+    font-size: 15px !important;
+  }
+
+  .footer h3 {
+    font-size: 1.4rem;
+  }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -502,14 +512,6 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .footer li {
-    font-weight: 300 !important;
-    font-size: 16px !important;
-  }
-
-  .footer h3 {
-    font-size: 1.4rem;
-  }
 
   .left {
     display: flex;
