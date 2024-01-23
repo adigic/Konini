@@ -125,7 +125,10 @@ form button {
   margin-bottom: 10px;
 }
 /*-----------------------------------------------Contact Media Query-----------------------------------------------------------------------*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 1000px) {
+  .section1 {
+    height: 65vh !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -183,7 +186,7 @@ form button {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .content-container {
     flex-direction: column;
   }
