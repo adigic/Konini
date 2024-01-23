@@ -46,6 +46,10 @@ ul {
   padding: 5px;
 }
 
+.bannerMid{
+margin: auto;
+}
+
 .bannerLeft {
   position: absolute;
   left: 20px;
@@ -73,10 +77,6 @@ ul {
   margin-bottom: 20px;
 }
 
-.headericons img {
-  width: 25px;
-  height: 25px;
-}
 
 /*---------------------------NAVBAR--------------------------------------------------*/
 
@@ -84,10 +84,10 @@ ul {
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray;
-  padding-bottom: 10px;
 }
 
 .links {
+  display: flex;
   margin: auto;
   gap: 20px;
 }
@@ -226,13 +226,19 @@ main {
 
 
 /*---------------------------FOOTER--------------------------------------------------*/
+footer{
+  background-color: var(--barbypink);
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 20px;
-  background-color: var(--barbypink);
-  color: white;
+  padding-bottom: 0px;
   align-items: center;
 }
 
@@ -300,7 +306,6 @@ main {
 
 .social span i {
   font-size: 2.7rem;
-  padding-bottom: 3.5px;
 }
 
 .footer .right {
@@ -339,6 +344,33 @@ main {
   height: 40px;
 }
 
+
+.chat{
+  background-color: #EF56AA;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 15px 10px;
+  position: sticky;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.chat i{
+  font-size: 1.7rem;
+  color: white;
+  transition: .15s;
+  cursor: pointer;
+}
+
+.chat i:hover{
+  color: var(--highlight);
+}
+
 /*---------------------------MediaQuery Header--------------------------------------------------*/
 @media only screen and (min-width: 1125px) {
   .footer .right {
@@ -347,12 +379,8 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
 
   .HeaderTop {
-    box-shadow: 0 5px 5px -2px gray;
     border-top: none;
   }
 
@@ -382,12 +410,17 @@ main {
   }
 
   .trustpilot {
-    display: block;
+    display: flex;
     text-align: center;
+    flex-direction: column;
   }
 
   .trustpilot h3 {
-    margin-left: 25px;
+    margin: 10px 0;
+  }
+
+  .trustpilot  ul{
+    padding: 0 !important;
   }
 
 }
@@ -396,6 +429,18 @@ main {
   .loginlink span, .loginlink p,
   .cartlink span {
     display: none;
+  }
+
+  .navbar i{
+    font-size: 1.6rem !important;
+  }
+
+  .loginlink {
+    left: 1rem;
+  }
+
+  .cartlink{
+    right: 1rem;
   }
   .navbar {
     justify-content: center;
@@ -409,22 +454,127 @@ main {
   }
 }
 
-/*---------------------------MediaQuery Footer--------------------------------------------------*/
-@media only screen and (max-width: 600px) {
-  .footer ul {
-    font-size: 12px !important;
-  }
-  .footer li {
-    font-weight: lighter !important;
-    font-size: 10px !important;
+@media only screen and (max-width: 768px) {
+
+
+.links{
+  display: none !important;
+}
+
+  .navbar{
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
-  .social img {
-    margin-top: 10px;
-    width: 20px;
-    height: 15px;
+  .navbar i{
+    font-size: 2rem !important;
   }
-  .trustpilot ul {
+
+  .loginlink, .cartlink{
+    position: relative;
+display: flex;
+justify-content: flex-end;
+  }
+
+  .navbar{
+    display: flex;
+    float: right;
+    gap: 30px;
+    
+  }
+ 
+}
+
+@media only screen and (max-width: 425px) {
+  
+
+  .HeaderTop img{
+    width: 300px;
+  }
+
+
+  .bannerMid{
     display: none;
   }
+
+  .bannerLeft,
+  .bannerRight {
+    display: flex;
+  }
+
+   
+  }
+
+/*---------------------------MediaQuery Footer--------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer ul{
+    padding: 0 !important;
+    margin-bottom: 2rem;
+  }
+
+
+
+  .footer li {
+    font-weight: 300 !important;
+    font-size: 16px !important;
+  }
+
+  .footer h3{
+    font-size: 1.4rem;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .social i {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .social span i {
+    font-size: 3.7em;
+  }
+
+  .right{
+    margin: 0;
+  }
+
+
+  .trustpilot h3{
+    margin: 10px 0;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+  .bannerLeft {
+    left: 10px;
+  }
+  
+  .bannerRight {
+    right: 10px;
+  }
+
+  .links{
+    display: none;
+  }
+
+  
+
 }
