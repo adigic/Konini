@@ -53,6 +53,9 @@
       display:block;
       padding-bottom: 35px;
     }
+    .a-box h3{
+      width:100px;
+    }
     .b-box{
       grid-column: 2/3;
       display:block;
@@ -62,6 +65,9 @@
       grid-column: 2/3;
       display:block;
       padding-bottom: 35px;
+    }
+    .c-box h3{
+      width:80px;
     }
     .d-box{
       grid-column: 2/3;
@@ -82,6 +88,10 @@
       grid-column: 2/3;
       display:block;
       padding-bottom: 35px;
+      
+    }
+    .g-box h3{
+      width:100px;
     }
     main h4{
       margin: auto;
@@ -89,6 +99,7 @@
     }
     main h3{
       text-align: center;
+      width: 110px;
     }
   }
   /* Mobile view@media only screen and (max-width: 590px) {}/*
