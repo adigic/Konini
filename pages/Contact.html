@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Styles/contact.css" />
     <link rel="stylesheet" href="/Styles/general.css" />
     <script src="/javascript/navigate.js" defer></script>
+    <script src="/javascript/contact.js" defer></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -44,7 +45,7 @@
             Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
             returrätt | Fria returer i butik
           </p>
-          </div>
+        </div>
         <div class="bannerRight">
           <a
             href="https://www.google.com/maps/place/Hantverkargatan+20,+112+21+Stockholm,+Sweden/@59.329005,18.044225,10z/data=!4m6!3m5!1s0x465f77d88fd15e99:0x2d75fa5edb3de9f7!8m2!3d59.3290047!4d18.0442246!16s%2Fg%2F11csmnj9cq?hl=en&entry=ttu"
@@ -135,14 +136,16 @@
                 <input type="email" id="email" name="email" required />
 
                 <label for="phone">Telefon nummer</label>
-                <input type="number" />
+                <input id="phone" type="number" required />
               </div>
 
               <div class="form-bottom">
                 <label for="message">Meddelande</label>
                 <textarea id="message" name="message" required></textarea>
                 <div class="formbutton">
-                  <button>Skicka</button>
+                  <button onclick="validateForm(event)" type="submit">
+                    Skicka
+                  </button>
                 </div>
               </div>
             </form>
