@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../Styles/general.css" />
     <script src="/javascript/navigate.js" defer></script>
     <script src="/javascript/home.js" defer></script>
+    <script src="/javascript/tabs.js" defer></script>
+    <script src="/javascript/sidemenu.js" defer></script>
+    
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -35,23 +38,31 @@
     <header>
       <div class="Bannertop">
         <div class="bannerLeft">
-          <p>Fri frakt över 500kr</p><i class='bx bx-check'></i>
-          <p>Snabb leverans!</p><i class='bx bx-check'></i>
+          <p>Fri frakt över 500kr</p>
+          <i class="bx bx-check"></i>
+          <p>Snabb leverans!</p>
+          <i class="bx bx-check"></i>
         </div>
         <div class="bannerMid">
-          <p>
-            Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
-            returrätt | Fria returer i butik
-          </p>
-          </div>
+        <p>
+          Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
+          returrätt | Fria returer i butik
+        </p>
+        </div>
         <div class="bannerRight">
-          <a href="https://www.google.com/maps/place/Hantverkargatan+20,+112+21+Stockholm,+Sweden/@59.329005,18.044225,10z/data=!4m6!3m5!1s0x465f77d88fd15e99:0x2d75fa5edb3de9f7!8m2!3d59.3290047!4d18.0442246!16s%2Fg%2F11csmnj9cq?hl=en&entry=ttu" target="_blank"><p>Hitta butik!</p><i class='bx bx-map' ></i></a>
+          <a
+            href="https://www.google.com/maps/place/Hantverkargatan+20,+112+21+Stockholm,+Sweden/@59.329005,18.044225,10z/data=!4m6!3m5!1s0x465f77d88fd15e99:0x2d75fa5edb3de9f7!8m2!3d59.3290047!4d18.0442246!16s%2Fg%2F11csmnj9cq?hl=en&entry=ttu"
+            target="_blank"
+            ><p>Hitta butik!</p>
+            <i class="bx bx-map"></i
+          ></a>
         </div>
       </div>
       <div class="HeaderTop">
         <img src="/images/LOGO.png" alt="" />
       </div>
       <nav class="navbar">
+        <div class="hamburger" id="openBtn"><i class='bx bx-menu'></i></div>
         <div class="loginlink">
           <a href=""><i class="bx bx-user"></i></a>
           <a href=""><span>LOGGA IN</span></a>
@@ -71,24 +82,57 @@
               <a href="#" id="topsButton">Toppar</a>
             </div>
           </li>
-          <li><a href="brandPage.html">VARUMÄRKEN</a></li>
+          <li><a href="/pages/brandPage.html">VARUMÄRKEN</a></li>
           <li>
-            <a href="">LOOKBOOK</a>
+            <a href="/pages/lookBook.html">LOOKBOOK</a>
           </li>
           <li>
             <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
           </li>
           <li class="search">
-            <a href=""><i class="bx bx-search"></i></a>
+            <a><i class="bx bx-search"></i></a>
           </li>
         </ul>
 
         <div class="cartlink">
           <span><a href="">0.00 SEK</a></span>
-          <a href="cartPage.html"><i class="bx bxs-cart"></i></a>
+          <a href="/pages/cartPage.html"><i class="bx bxs-cart"></i></a>
         </div>
       </nav>
     </header>
+
+    <!-- HAMBURGER MENU-->
+
+    <div class="sidemenu" id="sidemenu">
+      <div class="closemenu" id="closeBtn" onclick="closemenu()"><i class='bx bx-x'></i></div>
+      <!-- Använd samma a-taggar för sidomenyn -->
+<a href="../index.html" onclick="closemenu()">HEM</a>
+
+        <li class="dropdown">
+          <button class="dropbtn" onclick="closemenu()">KATEGORIER</button>
+          <div class="dropdown-content">
+            <a href="#" id="allProductsButton" onclick="closemenu()">Alla Produkter</a>
+            <a href="#" id="dressesButton" onclick="closemenu()">Klänningar</a>
+            <a href="#" id="skirtsButton" onclick="closemenu()">Kjolar</a>
+            <a href="#" id="shirtsButton" onclick="closemenu()">Skjortor</a>
+            <a href="#" id="topsButton" onclick="closemenu()">Toppar</a>
+          </div>
+        </li>
+<a href="/pages/brandPage.html" onclick="closemenu()">VARUMÄRKEN</a></li>
+
+          <a href="/pages/lookBook.html" onclick="closemenu()">LOOKBOOK</a>
+
+          <a href="/pages/salePage.html" onclick="closemenu()"><span class="reatext">REA</span></a>
+
+          <div class="user">
+          <a href="#">Logga in</a>
+          <a href="#">Registrera dig</a>
+        </div>
+
+      <!-- Du kan lägga till fler länkar här om det behövs -->
+    </div>
+
+    <!-- HAMBURGER MENU-->
 
     <main>
       <div class="product-container">
