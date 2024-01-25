@@ -46,6 +46,7 @@ ul {
   padding: 5px;
 }
 
+
 .bannerMid {
   margin: auto;
 }
@@ -197,7 +198,7 @@ ul {
   opacity: 0;  /* Change opacity to 0 initially */
   pointer-events: none;
   background-color: white;
-  z-index: 1;
+  z-index: 999;
   display: flex; /* Change display to block initially */
   flex-direction: column;
 }
@@ -278,7 +279,6 @@ ul {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  transition: .20s;
 }
 
 .sidemenu .dropdown-content a:hover {
@@ -290,13 +290,12 @@ ul {
 }
 
 .sidemenu .reatext{
-  color: var(--barbypink);
+  /* color: var(--barbypink); */
   transition: .2s ease-in;
 }
 
 .sidemenu .reatext:hover{
   color: var(--highlight);
-  text-decoration: underline;
 }
 
 .sidemenu .user{
@@ -319,7 +318,6 @@ ul {
 
 .sidemenu .user a:hover{
   color: var(--hovercolor);
-  text-decoration: underline;
 }
 
 /* ^^^^ ALLT DET HÄR ÄR HAMBURGARMENY ^^^^*/
@@ -669,6 +667,19 @@ footer {
   .bannerRight {
     display: flex;
   }
+
+  .sidemenu .dropbtn {
+    font-size: 1.7rem;
+  }
+
+  .sidemenu a{
+    font-size: 1.7rem;
+  }
+
+  .sidemenu .user a{
+    font-size: 1rem;
+  }
+
 }
 
 
