@@ -29,8 +29,8 @@
   background-color: var(--transBarby);
   box-shadow: 0px 5px 5px gray;
 
-  transform: translateX(-100%) scaleX(0);
-  transform-origin: left center;
+  transform: translateY(100%) scaleX(0);
+  transform-origin: top center;
   transition: transform 1s ease-out;
   transition-delay: 0.5s;
 }

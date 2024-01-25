@@ -14,8 +14,14 @@ function validateForm(event) {
   alert("Form submitted successfully!");
 }
 
-// Add an event listener to trigger the opening animation after the page loads
-document.addEventListener("DOMContentLoaded", function () {
+//add "open" class after a short delay
+function triggerOpeningAnimation() {
   var contentLeft = document.querySelector(".content-left");
-  contentLeft.classList.add("open");
-});
+  contentLeft.classList.remove("open");
+  setTimeout(function () {
+    contentLeft.classList.add("open");
+  }, 100); // delay
+}
+
+// Add an event listener to trigger the opening animation after the page loads
+document.addEventListener("DOMContentLoaded", triggerOpeningAnimation);
