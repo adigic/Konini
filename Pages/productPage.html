@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../Styles/productPage.css" />
     <link rel="stylesheet" href="../Styles/general.css" />
     <script src="/javascript/navigate.js" defer></script>
-    <script src="/javascript/home.js" defer></script>
+    <script src="/javascript/productPage.js" defer></script>
     <script src="/javascript/tabs.js" defer></script>
     <script src="/javascript/sidemenu.js" defer></script>
     <script src="/javascript/productpage.js" defer></script>
+    
     
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -135,7 +136,7 @@
 
     <!-- HAMBURGER MENU-->
 
-    <main>
+    <main id="productPage">
       <div class="product-container">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-inner">
@@ -225,9 +226,9 @@
 
         <div class="product-information">
           <section>
-            <div class="title-container">
-              <h1>Konini dress</h1>
-              <h2>399sek</h2>
+            <div id="titleContainer" class="title-container">
+              <h1 id="productName">Konini dress</h1>
+              <h2 id="productPrice"></h2>
             </div>
             <form action="">
               <p>Välj storlek:</p>
@@ -242,9 +243,9 @@
                 Lägg i varukorgen
               </button>
             </form>
-            <div class="product-info">
+            <div id="productInfo" class="product-info">
               <h4>Produktinformation</h4>
-              <p>
+              <p id="productDescription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
                 atque laborum beatae delectus. Excepturi vel provident harum ut
                 nobis, maiores facere tenetur earum tempora quis ullam culpa
