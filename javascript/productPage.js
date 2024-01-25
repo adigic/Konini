@@ -21,17 +21,12 @@ function updateProductPage(type, color, image, id, price) {
   productPriceElement.textContent = `${price}kr`;
 
   // Update product image in the carousel
-  const productImageElement = document.getElementById(
-    "carouselExampleIndicators"
-  );
-  const carouselInner = productImageElement.querySelector(".carousel-inner");
+  const carouselInner = document.querySelector(".carousel-inner");
 
-  // Clear existing carousel items
-  carouselInner.innerHTML = "";
+  // Find the existing active carousel item
+  const activeItem = carouselInner.querySelector(".carousel-item.active");
 
-  // Add new carousel item with the updated image
-  const newCarouselItem = document.createElement("div");
-  newCarouselItem.classList.add("carousel-item", "active");
-  newCarouselItem.innerHTML = `<img src="${image}" class="product-img d-block w-100" alt="...">`;
-  carouselInner.appendChild(newCarouselItem);
+  // Update the image source of the active item
+  const activeImage = activeItem.querySelector("img");
+  activeImage.src = image;
 }
