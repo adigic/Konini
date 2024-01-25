@@ -221,3 +221,40 @@ main h3 {
   background: linear-gradient(45deg, #4f49d2, #6c63ff);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
+
+@media screen and (max-width: 600px) {
+  .form-inner {
+      margin: 1rem 10%;
+  }
+
+  .form-group label, .form-group input, .payment-buttons button {
+      font-size: 16px;
+  }
+
+  .payment-buttons button {
+      padding: 10px 20px;
+  }
+
+  .form-group input {
+      padding: 8px;
+  }
+
+  .radio-group label {
+      font-size: 14px;
+  }
+
+  .half-width {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+  }
+
+  .form-group {
+      margin: 0.5rem auto;
+  }
+
+  #pay-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}

@@ -29,6 +29,23 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("topsButton2")
     .addEventListener("click", () => navigateToGallery("Tops"));
+
+  // hamburgerMenu
+  document
+    .getElementById("allProductsButton3")
+    .addEventListener("click", () => navigateToGallery("Products"));
+  document
+    .getElementById("dressesButton3")
+    .addEventListener("click", () => navigateToGallery("Dresses"));
+  document
+    .getElementById("skirtsButton3")
+    .addEventListener("click", () => navigateToGallery("Skirts"));
+  document
+    .getElementById("shirtsButton3")
+    .addEventListener("click", () => navigateToGallery("Shirts"));
+  document
+    .getElementById("topsButton3")
+    .addEventListener("click", () => navigateToGallery("Tops"));
 });
 
 function navigateToGallery(category) {
