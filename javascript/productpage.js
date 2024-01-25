@@ -6,10 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const image = urlParams.get("image");
   const id = urlParams.get("id");
   const price = urlParams.get("price"); // Assuming "price" is a parameter in the URL
-  console.log("Price from URL:", price);
 
   // Update the product page content based on the parameters
   updateProductPage(type, color, image, id, price);
+
+  // Add to Cart button
+  const addToCartButton = document.getElementById("addToCart");
+  addToCartButton.addEventListener("click", function () {
+    navigateToCart(type, color, image, id, price);
+  });
 });
 
 function updateProductPage(type, color, image, id, price) {
@@ -29,4 +34,11 @@ function updateProductPage(type, color, image, id, price) {
   // Update the image source of the active item
   const activeImage = activeItem.querySelector("img");
   activeImage.src = image;
+
+  activeImage.dataset.productId = id;
+}
+
+function navigateToCart(type, color, image, id, price) {
+  const cartUrl = `../Pages/cartPage.html?type=${type}&color=${color}&image=${image}&id=${id}&price=${price}`;
+  window.location.href = cartUrl;
 }
