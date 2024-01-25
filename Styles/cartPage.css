@@ -10,10 +10,8 @@ main {
 
 /*---------------------------TABLE--------------------------------------------------*/
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-inline: auto;
+  width: 100% !important;
 }
 
 .container a {
@@ -110,17 +108,27 @@ table {
   font-weight: 500;
 }
 
-.cart-card-table__edit {
+.cart-edit {
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 3;
+  width: max-content;
+  float: right;
 }
 
-.cart-card-table__edit button {
+.cart-edit button {
   display: block;
   margin-bottom: 0.4em;
   text-align: right;
   width: 100%;
   text-decoration: none;
+}
+
+.cart-edit button:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: var(--hovercolor) !important;
 }
 
 .btn-icon .btn-icon__text {
@@ -129,11 +137,6 @@ table {
   text-transform: uppercase;
 }
 
-.cart-card-table__edit button:hover {
-  transition: 0.2s;
-  cursor: pointer;
-  color: var(--hovercolor) !important;
-}
 
 .no-border {
   border-style: none;
@@ -224,9 +227,12 @@ section{
 }
 
 .first-section {
-  margin: 5rem;
+  width: 100%;
+  display: flex;
   justify-content: center;
   height: 500px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .first-section img {
@@ -234,16 +240,20 @@ section{
   object-fit: cover;
 }
 
-.saleContainer{
+.sale-container {
   background-color: #941b49;
-  padding: 10rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-transform: uppercase;
 }
 
-.saleContainer h1{
+.sale-container h1 {
+  text-align: center;
+  color: white;
   font-size: 100px;
-  margin: 0;
 }
 
 .saleContainer h4{
@@ -266,59 +276,135 @@ section{
     padding-right: 0;
   }
 
+
   .checkout-totals__total-sum {
     font-size: 1.7rem;
-  }
-
-  .first-section{
-    display: flex;
-  }
-
-  .first-section .logo{
-    display: none;
-  }
-
-  .sale-container{
-    display: flex;
   }
 }
 
 @media only screen and (max-width: 1124px) {
 
-  .checkout-totals{
-    margin: 0;
-    width: 100%;
-  }
-
   section{
     margin: 0;
   }
 
-  .first-section {
-    justify-content: center;
-    display: flex;
-    height: 400px;
-    align-items: center;
+  .checkout-totals__details-price, .checkout-totals__total-sum{
+    margin-right: 1rem !important;
   }
-  
-  .first-section img {
-    background-color: #941b49;
+  .checkout-totals__details-section{
+    padding-bottom: .5rem;
+  }
+
+  .fill--half-width {
+    padding-right: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+  }
+
+ .right{
+    padding-right: 0;
+    width: 100%;
+    margin: 0 !important;
+    margin-top: 2rem !important;
   }
 
   
-  .sale-container {
-    display: none;
-    margin: none;
+
+}
+
+/*---- MEDIA QUERIES ----*/
+
+@media only screen and (max-width: 1440px) {
+
+  .first-section{
+    padding: 0 1rem;
+  }
+  
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  .first-section{
+    height: 350px;
+  }
+
+  .first-section h1{
+    font-size: 5rem;
+  }
+
+  .first-section h4{
+    font-size: .9rem;
   }
 
 }
 
+@media only screen and (max-width: 768px) {
 
-/*---------------------------MediaQuery Footer--------------------------------------------------*/
-@media (min-width: 1940px) {
+
+  .first-section{
+    height: 250px;
+  }
+
+  .first-section h1{
+    font-size: 4rem;
+  }
+
+  .first-section h4{
+    font-size: .7rem;
+  }
+
+  .container{
+    padding: 0 !important;
+  }
+
+  .btn-icon__text {
+    display: none;
+  }
+
+  .cart-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+  }
+
+
+  .cart-edit button{
+    font-size: 1.2rem;
+  }
+
+  .no-border{
+    padding: 0;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+
+  nav{
+    display: none;
+  }
+
+  .first-section{
+    height: 200px;
+  }
+
+  .first-section h1{
+    font-size: 3rem;
+  }
+
+  .first-section h4{
+    font-size: .4rem;
+  }
+  
+}
+
+
+
+/*-------------CONTAINER MEDIAQUERIES---------------*/
+/* @media (min-width: 1940px) {
   .container {
     width: 1600px;
   }
@@ -326,7 +412,6 @@ section{
 @media (min-width: 1650px) {
   .container {
     width: 1270px;
-    width: 1300px;
   }
 }
 @media (min-width: 1200px) {
@@ -336,7 +421,7 @@ section{
 }
 @media (min-width: 992px) {
   .container {
-    width: 940px;
+    width: 960px;
   }
 }
 
@@ -344,4 +429,5 @@ section{
   .container {
     width: 720px;
   }
-}
+
+} */
