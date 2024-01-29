@@ -154,6 +154,7 @@
                   <th colspan="2">Produkt</th>
                   <th>Storlek</th>
                   <th>Pris</th>
+                  <th>Antal</th>
                   <th class="text-right checkout-cart__last-column">Summa</th>
                 </tr>
               </thead>
@@ -164,13 +165,10 @@
                       <img src="/Images/golden spice dress.avif" alt="" />
                     </a>
                   </td>
-                  <td class="no-border">
-                    <a href="#" class="cart-card-table__name" id="type"
+                  <td class="no-border ">
+                    <a href="#" class="cart-card-table__name" id="type" 
                       >Golden Spice Dress</a
                     >
-                    <p class="cart-card-table__article" id="articleNumber">
-                      Artikelnummer: 8714592
-                    </p>
                   </td>
                   <td class="no-border">
                     <p class="cart-card-table__size" id="size">XS</p>
@@ -182,6 +180,14 @@
                       <span class="currency-large">:-</span>
                     </span>
                   </td>
+                  <td class="no-border">
+                    <div class="quantity">
+                    <button><i class="bi bi-dash-square"></i></button>
+                    <p>1</p>
+                    <button><i class="bi bi-plus-square"></i></button>
+                  </div>
+                  </td>
+                    
                   <td class="no-border">
                     <div class="cart-edit">
                       <button type="button" class="btn-icon">
@@ -199,7 +205,8 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="hidden">
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -214,67 +221,9 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody class="cart-card-table">
-                <tr>
-                  <td class="product" rowspan="2">
-                    <a href="">
-                      <img src="/Images/dress2.jpeg" alt="" />
-                    </a>
-                  </td>
-                  <td class="no-border">
-                    <a href="#" class="cart-card-table__name" id="productName"
-                      >Rio Print Dress</a
-                    >
-                    <p class="cart-card-table__article">
-                      Artikelnummer: 8714522
-                    </p>
-                  </td>
-                  <td class="no-border">
-                    <p class="cart-card-table__size">L</p>
-                    <p class="cart-card-table__variant">Darcey Rose</p>
-                  </td>
-                  <td class="no-border">
-                    <span class="cart-card-table__price price">
-                      <span>249</span>
-                      <span class="currency-large">:-</span>
-                    </span>
-                  </td>
-                  <td class="no-border">
-                    <div class="cart-edit">
-                      <button type="button" class="btn-icon">
-                        <span class="btn-icon__text">Redigera</span>
-                        <span class="btn-icon__icon">
-                          <i class="bi bi-pencil-square"></i>
-                        </span>
-                      </button>
-                      <button type="button" class="btn-icon">
-                        <span class="btn-icon__text">Ta bort</span>
-                        <span class="btn-icon__icon">
-                          <i class="bi bi-trash"></i>
-                        </span>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td class="text-right">
-                    <div class="cart-card-table__subtotal">
-                      1 antal
-                      <span class="price">
-                        <span>249</span>
-                        <span class="currency-large">:-</span>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
               
             </table>
 
-            <div class="checkout-cart visible-sm visible-xs"></div>
           </div>
 
           <div class="checkout">

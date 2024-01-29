@@ -1,6 +1,4 @@
 
-
-
 /*---------------------------MAIN--------------------------------------------------*/
 
 main {
@@ -44,6 +42,7 @@ main {
   height: 40px;
   background-color: var(--barbypink) !important;
   border: none !important;
+  align-items: end;
 }
 
 .continue-button:hover {
@@ -106,6 +105,17 @@ table {
 
 .text-bold {
   font-weight: 500;
+}
+
+.quantity{
+  display: flex;
+  gap: 5px;
+  transition: .25s;
+}
+
+.quantity button:hover{
+  scale: 1.1;
+  color: var(--hovercolor);
 }
 
 .cart-edit {
@@ -260,6 +270,10 @@ section{
   font-size: 16px;
 }
 
+.mobile-cart{
+  display: none !important;
+}
+
 
 
 
@@ -382,10 +396,20 @@ section{
 
 @media only screen and (max-width: 425px) {
 
+  main{
+    margin-inline: 20px !important;
+  }
+
 
   nav{
     display: none;
   }
+
+  .top-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+   }
 
   .first-section{
     height: 200px;
@@ -398,10 +422,58 @@ section{
   .first-section h4{
     font-size: .4rem;
   }
-  
+
+
+  thead{
+    display: none;
+  }
+
+  tbody{
+    border-style: none !important;
+  }
+
+
+
+  tr img{
+    width: 150px;
+    padding: 20px ;
+  }
+
+
+  tr .no-border{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  td{
+    margin: auto;
+    padding: 20px !important;
+  }
+
+  .no-border{
+    padding: 5px !important;
+  }
+
+  .product{
+    padding: 0 !important;
+  }
+  .product-info{
+    padding: 20px !important;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .accordion--bordered{
+    width: 100%;
+    text-align: left;
+    
+  }
+
+
 }
-
-
 
 /*-------------CONTAINER MEDIAQUERIES---------------*/
 /* @media (min-width: 1940px) {
