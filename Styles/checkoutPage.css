@@ -97,11 +97,19 @@ main h3 {
   color: black;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 75px;
+}
+
 .form-content {
     position: relative;
     max-width: 800px;
     padding: 2em;
     margin: auto;
+    flex-grow: 1;
 }
 
 .form-inner {
@@ -237,6 +245,38 @@ main h3 {
 .form-group label.highlight-radio {
   color: red;
   font-weight: bold;
+}
+
+.cart-total-card {
+  width: 300px;
+  padding: 20px;
+  margin-top: 140px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-total-card h4 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.cart-total-card .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-total-card .total {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 600px) {

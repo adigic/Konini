@@ -1,275 +1,300 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KoniniShop</title>
-    <link rel="stylesheet" href="/Styles/checkoutPage.css" />
-    <link rel="stylesheet" href="/Styles/general.css" />
-    <script src="/javascript/home.js" defer></script>
-    <script src="/javascript/sidemenu.js" defer></script>
-    <script src="/javascript/tabs.js" defer></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Smooch+Sans:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="/javascript/navigate.js" defer></script>
-    <script src="/javascript/checkout.js" defer></script>
-  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>KoniniShop</title>
+      <link rel="stylesheet" href="/Styles/checkoutPage.css" />
+      <link rel="stylesheet" href="/Styles/general.css" />
+      <script src="/javascript/home.js" defer></script>
+      <script src="/javascript/sidemenu.js" defer></script>
+      <script src="/javascript/tabs.js" defer></script>
+      <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Smooch+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <script src="/javascript/navigate.js" defer></script>
+      <script src="/javascript/checkout.js" defer></script>
+    </head>
 
-  <body>
-    <header>
-      <div class="Bannertop">
-        <div class="bannerLeft">
-          <p>Fri frakt över 500kr</p>
-          <i class="bx bx-check"></i>
-          <p>Snabb leverans!</p>
-          <i class="bx bx-check"></i>
+    <body>
+      <header>
+        <div class="Bannertop">
+          <div class="bannerLeft">
+            <p>Fri frakt över 500kr</p>
+            <i class="bx bx-check"></i>
+            <p>Snabb leverans!</p>
+            <i class="bx bx-check"></i>
+          </div>
+          <div class="bannerMid">
+          <p>
+            Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
+            returrätt | Fria returer i butik
+          </p>
+          </div>
+          <div class="bannerRight">
+            <a
+              href="https://www.google.com/maps/place/Hantverkargatan+20,+112+21+Stockholm,+Sweden/@59.329005,18.044225,10z/data=!4m6!3m5!1s0x465f77d88fd15e99:0x2d75fa5edb3de9f7!8m2!3d59.3290047!4d18.0442246!16s%2Fg%2F11csmnj9cq?hl=en&entry=ttu"
+              target="_blank"
+              ><p>Hitta butik!</p>
+              <i class="bx bx-map"></i
+            ></a>
+          </div>
         </div>
-        <div class="bannerMid">
-        <p>
-          Fri standardfrakt för medlemmar vid köp över 200:- | 60 dagars
-          returrätt | Fria returer i butik
-        </p>
+        <div class="HeaderTop">
+          <img src="/images/LOGO.png" alt="" />
         </div>
-        <div class="bannerRight">
-          <a
-            href="https://www.google.com/maps/place/Hantverkargatan+20,+112+21+Stockholm,+Sweden/@59.329005,18.044225,10z/data=!4m6!3m5!1s0x465f77d88fd15e99:0x2d75fa5edb3de9f7!8m2!3d59.3290047!4d18.0442246!16s%2Fg%2F11csmnj9cq?hl=en&entry=ttu"
-            target="_blank"
-            ><p>Hitta butik!</p>
-            <i class="bx bx-map"></i
-          ></a>
-        </div>
-      </div>
-      <div class="HeaderTop">
-        <img src="/images/LOGO.png" alt="" />
-      </div>
-      <nav class="navbar">
-        <div class="hamburger" id="openBtn"><i class='bx bx-menu'></i></div>
-        <div class="loginlink">
-          <a href=""><i class="bx bx-user"></i></a>
-          <a href=""><span>LOGGA IN</span></a>
-          <p>|</p>
-          <a href=""><span>REGISTRERA DIG</span></a>
-        </div>
-        <ul class="links">
-          <li><a href="../index.html">HEM</a></li>
+        <nav class="navbar">
+          <div class="hamburger" id="openBtn"><i class='bx bx-menu'></i></div>
+          <div class="loginlink">
+            <a href=""><i class="bx bx-user"></i></a>
+            <a href=""><span>LOGGA IN</span></a>
+            <p>|</p>
+            <a href=""><span>REGISTRERA DIG</span></a>
+          </div>
+          <ul class="links">
+            <li><a href="../index.html">HEM</a></li>
+
+            <li class="dropdown">
+              <button class="dropbtn">KATEGORIER</button>
+              <div class="dropdown-content">
+                <a href="#" id="allProductsButton">Alla Produkter</a>
+                <a href="#" id="dressesButton">Klänningar</a>
+                <a href="#" id="skirtsButton">Kjolar</a>
+                <a href="#" id="shirtsButton">Skjortor</a>
+                <a href="#" id="topsButton">Toppar</a>
+              </div>
+            </li>
+            <li><a href="/pages/brandPage.html">VARUMÄRKEN</a></li>
+            <li>
+              <a href="/pages/lookBook.html">LOOKBOOK</a>
+            </li>
+            <li>
+              <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
+            </li>
+            <li class="search">
+              <a><i class="bx bx-search"></i></a>
+            </li>
+          </ul>
+
+          <div class="cartlink">
+            <span><a href="">0.00 SEK</a></span>
+            <a href="/pages/cartPage.html"><i class="bx bxs-cart"></i></a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HAMBURGER MENU-->
+
+      <div class="sidemenu" id="sidemenu">
+        <div class="closemenu" id="closeBtn" onclick="closemenu()"><i class='bx bx-x'></i></div>
+        <!-- Använd samma a-taggar för sidomenyn -->
+  <a href="../index.html" onclick="closemenu()">HEM</a>
 
           <li class="dropdown">
-            <button class="dropbtn">KATEGORIER</button>
+            <button class="dropbtn" onclick="closemenu()">KATEGORIER</button>
             <div class="dropdown-content">
-              <a href="#" id="allProductsButton">Alla Produkter</a>
-              <a href="#" id="dressesButton">Klänningar</a>
-              <a href="#" id="skirtsButton">Kjolar</a>
-              <a href="#" id="shirtsButton">Skjortor</a>
-              <a href="#" id="topsButton">Toppar</a>
+              <a href="#" id="allProductsButton3" onclick="closemenu()">Alla Produkter</a>
+              <a href="#" id="dressesButton3" onclick="closemenu()">Klänningar</a>
+              <a href="#" id="skirtsButton3" onclick="closemenu()">Kjolar</a>
+              <a href="#" id="shirtsButton3" onclick="closemenu()">Skjortor</a>
+              <a href="#" id="topsButton3" onclick="closemenu()">Toppar</a>
             </div>
           </li>
-          <li><a href="/pages/brandPage.html">VARUMÄRKEN</a></li>
-          <li>
-            <a href="/pages/lookBook.html">LOOKBOOK</a>
-          </li>
-          <li>
-            <a href="/pages/salePage.html"><span class="reatext">REA</span></a>
-          </li>
-          <li class="search">
-            <a><i class="bx bx-search"></i></a>
-          </li>
-        </ul>
+  <a href="/pages/brandPage.html" onclick="closemenu()">VARUMÄRKEN</a></li>
 
-        <div class="cartlink">
-          <span><a href="">0.00 SEK</a></span>
-          <a href="/pages/cartPage.html"><i class="bx bxs-cart"></i></a>
-        </div>
-      </nav>
-    </header>
+            <a href="/pages/lookBook.html" onclick="closemenu()">LOOKBOOK</a>
 
-    <!-- HAMBURGER MENU-->
+            <a href="/pages/salePage.html" onclick="closemenu()"><span class="reatext">REA</span></a>
 
-    <div class="sidemenu" id="sidemenu">
-      <div class="closemenu" id="closeBtn" onclick="closemenu()"><i class='bx bx-x'></i></div>
-      <!-- Använd samma a-taggar för sidomenyn -->
-<a href="../index.html" onclick="closemenu()">HEM</a>
-
-        <li class="dropdown">
-          <button class="dropbtn" onclick="closemenu()">KATEGORIER</button>
-          <div class="dropdown-content">
-            <a href="#" id="allProductsButton3" onclick="closemenu()">Alla Produkter</a>
-            <a href="#" id="dressesButton3" onclick="closemenu()">Klänningar</a>
-            <a href="#" id="skirtsButton3" onclick="closemenu()">Kjolar</a>
-            <a href="#" id="shirtsButton3" onclick="closemenu()">Skjortor</a>
-            <a href="#" id="topsButton3" onclick="closemenu()">Toppar</a>
+            <div class="user">
+            <a href="#">Logga in</a>
+            <a href="#">Registrera dig</a>
           </div>
-        </li>
-<a href="/pages/brandPage.html" onclick="closemenu()">VARUMÄRKEN</a></li>
 
-          <a href="/pages/lookBook.html" onclick="closemenu()">LOOKBOOK</a>
-
-          <a href="/pages/salePage.html" onclick="closemenu()"><span class="reatext">REA</span></a>
-
-          <div class="user">
-          <a href="#">Logga in</a>
-          <a href="#">Registrera dig</a>
-        </div>
-
-      <!-- Du kan lägga till fler länkar här om det behövs -->
-    </div>
-
-    <!-- HAMBURGER MENU-->
-    <main>
-      <h3>Snabbkassa</h3>
-      <div class="payment-buttons">
-        <button id="shopPayButton">Shop Pay</button>
-        <button id="paypalButton">PayPal</button>
-        <button id="googlePayButton">G-Pay</button>
+        <!-- Du kan lägga till fler länkar här om det behövs -->
       </div>
-      <div class="line-container">
-        <div class="line"></div>
-        <div class="breakpoint">
-          <span class="breakpoint-text">ELLER</span>
+
+      <!-- HAMBURGER MENU-->
+      <main>
+        <h3>Snabbkassa</h3>
+        <div class="payment-buttons">
+          <button id="shopPayButton">Shop Pay</button>
+          <button id="paypalButton">PayPal</button>
+          <button id="googlePayButton">G-Pay</button>
         </div>
-      </div>
-      <div class="form-content">
-        <div class="form-inner">
-          <div class="form-group">
-            <label style="font-size: 18px; color: #333333;">Kontakt</label>
-            <small>Vänligen, skriv in din email-adress: exempel@gmail.com</small>
-            <input type="email" class="form-input" placeholder="Email" required />
+        <div class="line-container">
+          <div class="line"></div>
+          <div class="breakpoint">
+            <span class="breakpoint-text">ELLER</span>
           </div>
-          <div class="form-group">
-            <label style="font-size: 18px; color: #333333;">Leverans</label>
-            <small>Hemmahörande land</small>
-            <input type="text" class="form-input" placeholder="Land" />
-            <div class="half-width">
-              <small>Vänligen skriv in ditt förnamn</small>
-              <input type="text" class="form-input" placeholder="Förnamn" required />
-            </div>
-            <div class="half-width">
-              <small>Vänligen skriv in ditt efternamn</small>
-              <input type="text" class="form-input" placeholder="Efternamn" required />
-            </div>
-            <small>Vart bor du?</small>
-            <input type="text" class="form-input" placeholder="Adress" required />
-            <div class="half-width">
-              <small>Vilket postnummer?</small>
-              <input type="text" class="form-input" placeholder="Postnummer" required />
-            </div>
-            <div class="half-width">
-              <small>Vilken postort?</small>
-              <input type="text" class="form-input" placeholder="Postort" required />
-            </div>
-            <small>Vi kan behöva nå dig via telefon, vad är ditt nummer?</small>
-            <input type="text" class="form-input" placeholder="Telefon" required />
-          </div>
-          <div class="form-group">
-            <label style="font-size: 18px; color: #333333;">Fraktmetod</label>
-            <div class="radio-group">
-              <input
-                type="radio"
-                id="postnord-hem"
-                name="fraktmetod"
-                placeholder="postnord-hem"
-              />
-              <label for="postnord-hem">Postnord Hemleverans</label>
-              <input
-                type="radio"
-                id="postnord-hämta"
-                name="fraktmetod"
-                placeholder="postnord-hämta"
-              />
-              <label for="postnord-hämta">Postnord Utlämningställe</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label style="font-size: 18px; color: #333333;">Betalning</label>
-            <div class="radio-group">
-              <input
-                type="radio"
-                id="klarna"
-                name="betalningsmetod"
-                value="klarna"
-              />
-              <label for="klarna">Klarna</label>
-              <input
-                type="radio"
-                id="paypal"
-                name="betalningsmetod"
-                value="paypal"
-              />
-              <label for="paypal">PayPal</label>
-              <input
-                type="radio"
-                id="kort"
-                name="betalningsmetod"
-                value="kort"
-              />
-              <label for="kort">Kort</label>
-            </div>
-          </div>
-          <button id="pay-btn">Betala</button>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="left">
-          <ul class="konini">
-            <h3>KONINI</h3>
-            <li>Om oss</li>
-            <li>Partnerskap</li>
-            <li>Jobba hos oss</li>
-          </ul>
-          <ul class="customerService">
-            <h3>KUNDSERVICE</h3>
-            <a href="/pages/Contact.html"><li>Kontakta oss</li></a>
-            <li>Vanliga frågor & svar</li>
-            <li>Integritetspolicy</li>
-            <li>Cookie-policy</li>
-          </ul>
-          <ul class="socials">
-            <h3>FÖLJ OSS</h3>
-            <div class="social">
-              <a href="https://www.facebook.com/koninishop.se" target="_blank"><i class="bx bxl-facebook-square"></i></a>
-              <a href=""
-                ><span><i class="bx bxl-youtube"></i></span
-              ></a>
-              <a href="https://www.instagram.com/koninishop" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+        <div class="flex-container">
+          <div class="form-content">
+            <div class="form-inner">
+            <div class="form-group">
+              <label style="font-size: 18px; color: #333333;">Kontakt</label>
+              <small>Vänligen, skriv in din email-adress: exempel@gmail.com</small>
+              <input type="email" class="form-input" placeholder="Email" required />
             </div>
-          </ul>
-        </div>
-        <div class="right">
-          <div class="trustpilot">
-            <h3>Trustpilot</h3>
-            <ul>
-              <div>
-                <img src="/images/Stjärna.png" alt="" />
-                <img src="/images/Stjärna.png" alt="" />
-                <img src="/images/Stjärna.png" alt="" />
-                <img src="/images/Stjärna.png" alt="" />
-                <img src="/images/Stjärna.png" alt="" />
+            <div class="form-group">
+              <label style="font-size: 18px; color: #333333;">Leverans</label>
+              <small>Hemmahörande land</small>
+              <input type="text" class="form-input" placeholder="Land" />
+              <div class="half-width">
+                <small>Vänligen skriv in ditt förnamn</small>
+                <input type="text" class="form-input" placeholder="Förnamn" required />
               </div>
-              <p>Utmärkt 5/5 - 1996 omdömen</p>
+              <div class="half-width">
+                <small>Vänligen skriv in ditt efternamn</small>
+                <input type="text" class="form-input" placeholder="Efternamn" required />
+              </div>
+              <small>Vart bor du?</small>
+              <input type="text" class="form-input" placeholder="Adress" required />
+              <div class="half-width">
+                <small>Vilket postnummer?</small>
+                <input type="text" class="form-input" placeholder="Postnummer" required />
+              </div>
+              <div class="half-width">
+                <small>Vilken postort?</small>
+                <input type="text" class="form-input" placeholder="Postort" required />
+              </div>
+              <small>Vi kan behöva nå dig via telefon, vad är ditt nummer?</small>
+              <input type="text" class="form-input" placeholder="Telefon" required />
+            </div>
+            <div class="form-group">
+              <label style="font-size: 18px; color: #333333;">Fraktmetod</label>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="postnord-hem"
+                  name="fraktmetod"
+                  placeholder="postnord-hem"
+                />
+                <label for="postnord-hem">Postnord Hemleverans</label>
+                <input
+                  type="radio"
+                  id="postnord-hämta"
+                  name="fraktmetod"
+                  placeholder="postnord-hämta"
+                />
+                <label for="postnord-hämta">Postnord Utlämningställe</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label style="font-size: 18px; color: #333333;">Betalning</label>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="klarna"
+                  name="betalningsmetod"
+                  value="klarna"
+                />
+                <label for="klarna">Klarna</label>
+                <input
+                  type="radio"
+                  id="paypal"
+                  name="betalningsmetod"
+                  value="paypal"
+                />
+                <label for="paypal">PayPal</label>
+                <input
+                  type="radio"
+                  id="kort"
+                  name="betalningsmetod"
+                  value="kort"
+                />
+                <label for="kort">Kort</label>
+              </div>
+            </div>
+            <button id="pay-btn">Betala</button>
+          </div>
+        </div>
+        <div class="cart-total-card">
+          <h4>Sammanfattning</h4>
+          <div class="item">
+            <span>Delsumma:</span>
+            <span>400:-</span>
+          </div>
+          <div class="item">
+            <span>VAT (25%):</span>
+            <span>100:-</span>
+          </div>
+          <div class="item">
+            <span>Fraktkostnad:</span>
+            <span>50:-</span>
+          </div>
+          <div class="item">
+            <span>Leveranstid:</span>
+            <span>1-3 dagar</span>
+          </div>
+          <div class="item total">
+            <strong>Totalt:</strong>
+            <strong>500:-</strong>
+          </div>
+        </div>
+      </div>  
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="left">
+            <ul class="konini">
+              <h3>KONINI</h3>
+              <li>Om oss</li>
+              <li>Partnerskap</li>
+              <li>Jobba hos oss</li>
+            </ul>
+            <ul class="customerService">
+              <h3>KUNDSERVICE</h3>
+              <a href="/pages/Contact.html"><li>Kontakta oss</li></a>
+              <li>Vanliga frågor & svar</li>
+              <li>Integritetspolicy</li>
+              <li>Cookie-policy</li>
+            </ul>
+            <ul class="socials">
+              <h3>FÖLJ OSS</h3>
+              <div class="social">
+                <a href="https://www.facebook.com/koninishop.se" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                <a href=""
+                  ><span><i class="bx bxl-youtube"></i></span
+                ></a>
+                <a href="https://www.instagram.com/koninishop" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
             </ul>
           </div>
+          <div class="right">
+            <div class="trustpilot">
+              <h3>Trustpilot</h3>
+              <ul>
+                <div>
+                  <img src="/images/Stjärna.png" alt="" />
+                  <img src="/images/Stjärna.png" alt="" />
+                  <img src="/images/Stjärna.png" alt="" />
+                  <img src="/images/Stjärna.png" alt="" />
+                  <img src="/images/Stjärna.png" alt="" />
+                </div>
+                <p>Utmärkt 5/5 - 1996 omdömen</p>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-  </body>
+      </footer>
+    </body>
 </html>
