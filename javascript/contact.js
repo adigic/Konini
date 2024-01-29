@@ -12,6 +12,8 @@ function validateForm(event) {
     return;
   }
   alert("Form submitted successfully!");
+
+  document.getElementById("myForm").reset();
 }
 
 //add "open" class after a short delay
