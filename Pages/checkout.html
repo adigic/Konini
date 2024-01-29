@@ -31,6 +31,7 @@
       rel="stylesheet"
     />
     <script src="/javascript/navigate.js" defer></script>
+    <script src="/javascript/checkout.js" defer></script>
   </head>
 
   <body>
@@ -149,25 +150,33 @@
         <div class="form-inner">
           <div class="form-group">
             <label style="font-size: 18px; color: #333333;">Kontakt</label>
-            <input type="email" class="form-input" placeholder="Email" />
+            <small>Vänligen, skriv in din email-adress: exempel@gmail.com</small>
+            <input type="email" class="form-input" placeholder="Email" required />
           </div>
           <div class="form-group">
             <label style="font-size: 18px; color: #333333;">Leverans</label>
+            <small>Hemmahörande land</small>
             <input type="text" class="form-input" placeholder="Land" />
             <div class="half-width">
-              <input type="text" class="form-input" placeholder="Förnamn" />
+              <small>Vänligen skriv in ditt förnamn</small>
+              <input type="text" class="form-input" placeholder="Förnamn" required />
             </div>
             <div class="half-width">
-              <input type="text" class="form-input" placeholder="Efternamn" />
+              <small>Vänligen skriv in ditt efternamn</small>
+              <input type="text" class="form-input" placeholder="Efternamn" required />
             </div>
-            <input type="text" class="form-input" placeholder="Adress" />
+            <small>Vart bor du?</small>
+            <input type="text" class="form-input" placeholder="Adress" required />
             <div class="half-width">
-              <input type="text" class="form-input" placeholder="Postnummer" />
+              <small>Vilket postnummer?</small>
+              <input type="text" class="form-input" placeholder="Postnummer" required />
             </div>
             <div class="half-width">
-              <input type="text" class="form-input" placeholder="Postort" />
+              <small>Vilken postort?</small>
+              <input type="text" class="form-input" placeholder="Postort" required />
             </div>
-            <input type="text" class="form-input" placeholder="Telefon" />
+            <small>Vi kan behöva nå dig via telefon, vad är ditt nummer?</small>
+            <input type="text" class="form-input" placeholder="Telefon" required />
           </div>
           <div class="form-group">
             <label style="font-size: 18px; color: #333333;">Fraktmetod</label>
@@ -214,7 +223,7 @@
               <label for="kort">Kort</label>
             </div>
           </div>
-          <button id="pay-btn" disabled>Betala</button>
+          <button id="pay-btn">Betala</button>
         </div>
       </div>
     </main>

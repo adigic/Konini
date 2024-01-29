@@ -153,6 +153,13 @@ main h3 {
     margin-right: 3%;
 }
 
+.form-group small {
+  display: block;
+  font-size: 0.8rem;
+  color: #666666;
+  margin-bottom: -10px;
+}
+
 .radio-group {
   display: flex;
   flex-direction: column;
@@ -220,6 +227,16 @@ main h3 {
 #pay-btn:hover {
   background: linear-gradient(45deg, #4f49d2, #6c63ff);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-group input.highlight {
+  border: 2px solid red;
+  box-shadow: none;
+}
+
+.form-group label.highlight-radio {
+  color: red;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
