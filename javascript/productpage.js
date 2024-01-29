@@ -23,7 +23,7 @@ function updateProductPage(type, color, image, id, price) {
   productNameElement.textContent = `${color} ${type}`;
 
   const productPriceElement = document.getElementById("productPrice");
-  productPriceElement.textContent = `${price}:-`;
+  productPriceElement.textContent = `${price}kr`;
 
   // Update product image in the carousel
   const carouselInner = document.querySelector(".carousel-inner");
