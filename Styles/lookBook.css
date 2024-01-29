@@ -12,6 +12,7 @@
     "p1 pb pb"
     "p1 p2 p3";
     height:750px;
+    width: fit-content;
 }
 .pinkbox{
     background-color: rgb(255, 230, 242);
