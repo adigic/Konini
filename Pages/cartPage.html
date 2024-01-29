@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/Styles/general.css" />
     <script src="/javascript/cartPage.js" defer></script>
     <script src="/javascript/navigate.js" defer></script>
-    <script src="/javascript/productPage.js" defer></script>
     <script src="/javascript/sidemenu.js" defer></script>
     <script src="/javascript/tabs.js" defer></script>
 
@@ -160,13 +159,13 @@
               </thead>
               <tbody class="cart-card-table">
                 <tr>
-                  <td class="product" rowspan="2">
+                  <td id="" class="product" rowspan="2">
                     <a href="">
-                      <img src="/Images/golden spice dress.avif" alt="" />
+                      <img id="img" src="/Images/golden spice dress.avif" alt="" />
                     </a>
                   </td>
                   <td class="no-border ">
-                    <a href="#" class="cart-card-table__name" id="type" 
+                    <a href="#" class="cart-card-table__name" id="productName" 
                       >Golden Spice Dress</a
                     >
                   </td>
@@ -175,18 +174,17 @@
                     <p class="cart-card-table__variant" id="color">Strong Yellow</p>
                   </td>
                   <td class="no-border">
-                    <span class="cart-card-table__price price" id="price">
-                      <span>199</span>
-                      <span class="currency-large">:-</span>
+                    <span class="cart-card-table__price price" >
+                      <span id="productPrice"></span>
                     </span>
                   </td>
                   <td class="no-border">
                     <div class="quantity">
-                    <button><i class="bi bi-dash-square"></i></button>
-                    <p>1</p>
-                    <button><i class="bi bi-plus-square"></i></button>
-                  </div>
-                  </td>
+                        <button id="decreaseQuantityButton"><i class="bi bi-dash-square"></i></button>
+                        <p id="quantityDisplay">1</p>
+                        <button id="increaseQuantityButton"><i class="bi bi-plus-square"></i></button>
+                    </div>
+                </td>
                     
                   <td class="no-border">
                     <div class="cart-edit">
@@ -212,9 +210,9 @@
                   <td></td>
                   <td class="text-right">
                     <div class="cart-card-table__subtotal">
-                      1 antal
+                      <span id="quantityDisplay2">1</span> antal
                       <span class="price" id="price">
-                        <span>199</span>
+                        <span></span>
                         <span class="currency-large">:-</span>
                       </span>
                     </div>
@@ -246,9 +244,9 @@
                       Artiklar i kundvagnen
                     </div>
                     <div class="checkout-totals__details-price">
-                      <span class="price" id="priceTotal">
-                        <span>448,00</span>
-                        <span class="currency-large"> SEK</span>
+                      <span  class="price">
+                        <span id="quantityDisplay3"></span>
+                        <span class="currency-large"> st</span>
                       </span>
                     </div>
                   </div>
@@ -259,9 +257,9 @@
                       Totalsumma
                     </div>
                     <div class="checkout-totals__total-sum-price">
-                      <span class="price" id="priceTotal">
-                        <span>448,00</span>
-                        <span class="currency-large"> SEK</span>
+                      <span class="price" id="price3">
+                        <span></span>
+                        <span id="totalSum" class="currency-large"></span>
                       </span>
                     </div>
                   </div>
