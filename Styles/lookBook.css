@@ -7,7 +7,7 @@
 .box1{
     display: grid;
     grid-template-columns: 35% 32.5% 32.5%;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     "p1 pb pb"
     "p1 p2 p3";
@@ -64,39 +64,87 @@
     width:435px;
 }
 .box2{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    
+    display: grid;
+    grid-template-columns: 35% 32.5% 32.5%;
+    grid-template-rows: 76% 24% ;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "t1 t2 t3";
+    height:450px;
+    width:100%;
 }
-#card1{
-    background-color: #DCEDD1;
+.mid-card1{
+    width:93%;
 }
-#card2{
-    background-color: #cce7da;
-}
-#card3{
-    background-color: #C6E4EB;
-}
-.mid-card{
+.card-img1{
+    grid-area: img1;
     width:100%;
     height: 100%;
+    object-fit: cover;
 }
-.card-text{
-    
-    text-align: start;
-    font-size: 18px;
+.card-img2{
+    grid-area: img2;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mid-card3{
+    width: 93%;
+    margin-left: auto;
+}
+.card-img3{
+    grid-area: img3;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardtext1{
+    background-color: #cddbc3;
+    padding:5px;
+    padding-left: 10px;
+    margin:0;
     font-weight: 500;
-    padding:4px 12px;
-    margin-bottom: 2px;
-    background-color: rgba(0, 0, 0, 0.048);
-    
 }
-.card-undertext{
-    text-align: start;
-    font-size: 16px;
-    padding: 15px 14px;
-    margin-bottom: 0px;
+.cardtext2{
+    background-color: #bcd4cc;
+    padding:5px;
+    padding-left: 10px;
+    margin:0;
+    font-weight: 500;
+}
+.cardtext3{
+    background-color: #b9d5db;
+    padding:5px;
+    padding-left: 10px;
+    margin: 0;
+    font-weight: 500;
+}
+.cardundertext1{
+    background-color: #DCEDD1;
+    padding: 10px;
+    padding-left:10px;
+}
+.cardundertext2{
+    background-color: #CCE7DE;
+    padding: 10px;
+    padding-left:10px;
+}
+.cardundertext3{
+    background-color: #C6E4EB;
+    padding: 10px;
+    padding-left:10px;
+}
+.slide-box{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auto-slide{
+    max-width: 600px;
+}
+.mySlides{
+    width:100%;
 }
 .socialbanner{
     margin-top: 35px;
@@ -113,97 +161,115 @@
     font-size: 25px;
     font-weight: 600;
 }
-.instabox{
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 270px;
-    gap:10px;
-}
-.instabox img{
-    width:265px;
-    height:270px;
-    
-}
-#ig1{
-    grid-column: 1/4;
-    grid-row: 1/1;
-    
-}
-#ig2{
-    grid-column: 2/4;
-    grid-row: 1/1;
-}
-#ig3{
-    grid-column: 3/4;
-    grid-row: 1/1;
-}
-#ig4{
-    grid-column: 4/4;
-    grid-row: 1/1;
-}
+
 @media only screen and (max-width: 1138px) {
     .main-container{
         width:100%;
         padding:0px 18px !important;
-        
     }
-    
   }
-@media only screen and (max-width: 1060px){
-    .box2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card{
-        width:500px !important;   
-    }
-    .maintitle{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        width:100%;
-    }
+@media only screen and (max-width: 920px){
     .pinkbox h4{
-        font-size: 28px;
-        padding: 28px;
+        font-size:28px;
     }
     .pinkbox p{
-        font-size: 22px;
+        font-size: 20px;
     }
-  }
-
-/*-------------------------------tablet view-------------------------------*/
-@media only screen and (max-width: 768px){
-    
-    .main-container{
-
-    }
-    .box1{
-        height: 500px;
-    }
-    .pinkbox{
+    .box2{
        
     }
+    .cardundertext1{
+        font-size: 14px;
+    }
+    .cardundertext2{
+        font-size: 14px;
+    }
+    .cardundertext3{
+        font-size: 14px;
+    }
+    
+}
+/*-------------------------------tablet view-------------------------------*/
+@media only screen and (max-width: 768px){
+
+    .box1{
+        height: 450px;
+    }
     .pinkbox h4{
-        font-size: 24px;
+        font-size: 21px;
         font-weight: 300;
         padding: 14px;
     }
     .pinkbox p{
         font-size: 16px;
         font-weight: 200;
+        padding-left: 13px;
+    }
+    .maintitle{
+        font-size: 26px;
+        padding-top: 20px;
+        width:300px;
     }
     .box2{
-        flex-direction: column;
-        align-items: center;
+        height:300px;
+    }  
+    .cardtext1{
+        font-size: 13px;
+        padding:4px;
+    }
+    .cardtext2{
+        font-size: 13px;
+        padding:4px;
+    }
+    .cardtext3{
+        font-size: 13px;
+        padding:4px;
+    }
+    .cardundertext1{
+        font-size: 12px;
+    }
+    .cardundertext2{
+        font-size: 12px;
+    }
+    .cardundertext3{
+        font-size: 12px;
+    }
+    .socialbanner h3{
+        font-size: 40px;
+    }
+    .auto-slide{
+        width:90%;
     }
 }
-/*-------------------------------mobile view-------------------------------*/
-@media only screen and (max-width: 590px){
 
+@media only screen and (max-width: 590px){
+    
+    .pinkbox h4{
+        font-size: 15px;
+    }
+    .pinkbox p{
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    .cardtext1{
+        font-size: 11px;
+    }
+    .cardtext2{
+        font-size: 11px;
+    }
+    .cardtext3{
+        font-size: 11px;
+    }
+    .cardundertext1{
+        font-size: 10px;
+    }
+    .cardundertext2{
+        font-size: 10px;
+    }
+    .cardundertext3{
+        font-size: 10px;
+    }
+    .auto-slide{
+        width:100%;
+    }
 }
