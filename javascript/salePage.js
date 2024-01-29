@@ -30,11 +30,9 @@ function displaysaleProducts(productArray) {
     // Cross over original price
     productPrice.classList.add("angled-line-through");
 
-
     // Lägg till element i product-price div.
     productPriceContainer.appendChild(productSale);
     productPriceContainer.appendChild(productPrice);
-
 
     // Skapa en div för img-elementet
     const imgContainer = document.createElement("div");
@@ -59,7 +57,7 @@ function displaysaleProducts(productArray) {
     // Lägger till click event listener för att hantera klick på varje produkt
     listItem.addEventListener("click", () => {
       // omdirigera till produktsidan och skicka med JSON data som parametrar
-      window.location.href = `../Pages/productPage.html?type=${product.Type}&color=${product.Color}&image=${product.Image}`;
+      window.location.href = `../Pages/productPage.html?type=${product.Type}&color=${product.Color}&image=${product.Image}&price=${product.Price}&sale=${product.Sale}`;
     });
 
     productList.appendChild(listItem);
