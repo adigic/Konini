@@ -4,20 +4,20 @@
     width:1090px;
     margin:auto;
 }
-.main-container h2{
-    
-}
 .box1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    height: 750px;
+    grid-template-columns: 35% 32.5% 32.5%;
+    grid-template-rows: 55% 45%;
+    grid-template-areas: 
+    "p1 pb pb"
+    "p1 p2 p3";
+    height:750px;
 }
 .pinkbox{
     background-color: rgb(255, 230, 242);
-    grid-row: 1/3;
-    grid-column:2/4;
+    grid-area: pb;
     text-align: start;
+    
 }
 .pinkbox h4{
     font-size: 34px;
@@ -34,30 +34,28 @@
     font-weight: 200;
 }
 #pic1{
-    height:750px;
-    width: 460px;
-    grid-row: 1/3;
-    grid-column: 1/2;
+    height:100%;
+    width:100%;
+    grid-area: p1;
+    object-fit: cover;
+    
+    
 }
 #pic2{
-    height:380px;
-    width: 315px;
-    grid-row:3/3;
-    grid-column: 2/3 ;
-    overflow:hidden;
+    height:100%;
+    width:100%;
+    grid-area: p2;
+    object-fit: cover;
+    
 }
 #pic3{
-    height:380px;
-    width:315px;
-    grid-row: 3/3;
-    grid-column: 3/3;
-    overflow:hidden;
+    height:100%;
+    width:100%;
+    grid-area: p3;
+    object-fit: cover;
+    
 }
-.box2{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+
 .maintitle{
     font-size: 38px;
     font-weight: 600;
@@ -65,37 +63,40 @@
     border-bottom: solid black 3px;
     width:435px;
 }
+.box2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
 #card1{
     background-color: #DCEDD1;
-    border-radius: 0%;
 }
 #card2{
-    background-color: #CCE7DE;
-    border-radius: 0%;
+    background-color: #cce7da;
 }
 #card3{
-    background-color: #BBE7F0;
-    border-radius: 0%;
+    background-color: #C6E4EB;
 }
-.card-img-top{
-    height: 300px;
-    object-fit: cover;
-    border-radius: 0% !important;
-}
-.card-body{
-    height:100px;
-    padding:10px !important;
+.mid-card{
+    width:100%;
+    height: 100%;
 }
 .card-text{
+    
     text-align: start;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    padding:4px 12px;
     margin-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.048);
     
 }
 .card-undertext{
     text-align: start;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 15px 14px;
+    margin-bottom: 0px;
 }
 .socialbanner{
     margin-top: 35px;
@@ -142,28 +143,67 @@
     grid-column: 4/4;
     grid-row: 1/1;
 }
+@media only screen and (max-width: 1138px) {
+    .main-container{
+        width:100%;
+        padding:0px 18px !important;
+        
+    }
+    
+  }
+@media only screen and (max-width: 1060px){
+    .box2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width:500px !important;   
+    }
+    .maintitle{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        width:100%;
+    }
+    .pinkbox h4{
+        font-size: 28px;
+        padding: 28px;
+    }
+    .pinkbox p{
+        font-size: 22px;
+    }
+  }
+
 /*-------------------------------tablet view-------------------------------*/
 @media only screen and (max-width: 768px){
+    
+    .main-container{
+
+    }
     .box1{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr ;
-        height: 550px;
+        height: 500px;
     }
     .pinkbox{
-        background-color: rgb(255, 230, 242);
-        grid-row: 2/2;
-        grid-column: 1/4;
-        text-align: start;
+       
     }
-    #pic1{
-        height: 600px;
-        grid-column: 1/2;
+    .pinkbox h4{
+        font-size: 24px;
+        font-weight: 300;
+        padding: 14px;
     }
-    #pic2{
+    .pinkbox p{
+        font-size: 16px;
+        font-weight: 200;
+    }
+    .box2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*-------------------------------mobile view-------------------------------*/
+@media only screen and (max-width: 590px){
 
-    }
-    #pic3{
-
-    }
 }

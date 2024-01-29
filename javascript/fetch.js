@@ -39,8 +39,17 @@ function displayProducts(productArray) {
 
     // Lägger till click event listener för att hantera klick på varje produkt
     listItem.addEventListener("click", () => {
-      // omdirigera till produktsidan och skicka med JSON data som parametrar
-      window.location.href = `../Pages/productPage.html?type=${product.Type}&color=${product.Color}&image=${product.Image}`;
+      // Redirect to the product page and send product data as parameters
+      const queryParams = new URLSearchParams({
+        type: product.Type,
+        color: product.Color,
+        image: product.Image,
+        price: product.Price,
+        id: product.id,
+      });
+      console.log(queryParams);
+      //SKICKA PARAMETRAR TILL PRODUCTPAGE
+      window.location.href = `../Pages/productPage.html?${queryParams.toString()}`;
     });
 
     productList.appendChild(listItem);
