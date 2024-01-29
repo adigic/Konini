@@ -85,4 +85,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const cartUrl = `../Pages/cartPage.html?type=${type}&color=${color}&image=${image}&id=${id}&price=${price}`;
     window.location.href = cartUrl;
   }
+
+  // Function for selected size.
+
+// Get all elements with class 'sizeButton' and add click event listener to each
+document.querySelectorAll('.sizeButton').forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Remove 'pressed' class from all buttons
+    document.querySelectorAll('.sizeButton').forEach(function(btn) {
+      if (btn !== button) {
+        btn.classList.remove('pressed');
+      }
+    });
+
+    // Toggle 'pressed' class for the clicked button
+    this.classList.toggle('pressed');
+  });
+});
+
+
+  
   
