@@ -110,12 +110,13 @@ table {
 .quantity{
   display: flex;
   gap: 5px;
-  transition: .25s;
+  transition: color .25s;
 }
 
 .quantity button:hover{
   scale: 1.1;
-  color: var(--hovercolor);
+  transition: 0.2s ease-in-out;
+  color: var(--hovercolor) !important;
 }
 
 .cart-edit {
