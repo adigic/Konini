@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
     productNameElement.textContent = `${color} ${type}`;
   
     const productPriceElement = document.getElementById("productPrice");
-    productPriceElement.textContent = `${price}kr`;
+    productPriceElement.textContent = `${price}:-`;
   
     const productSaleElement = document.getElementById("productSale");
-    productSaleElement.textContent = `${sale}kr`;
+    productSaleElement.textContent = `${sale}:-`;
   
     // Update product image in the carousel
     const carouselInner = document.querySelector(".carousel-inner");
@@ -56,23 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
     position: relative;
     display: inline-block;
   }
-  #productPrice::before,
   #productPrice::after {
-    content: "";
-    width: 100%;
+    content: '';
     position: absolute;
-    right: 0;
-    top: 50%;
-  }
-  #productPrice::before {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    -webkit-transform: skewY(-10deg);
-    transform: skewY(-10deg);
-  }
-  #productPrice::after {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    -webkit-transform: skewY(10deg);
-    transform: skewY(10deg);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1.6px;
+    background-color: black;
+    transform: rotate(-30deg);
+    transform-origin: 0 0;
   }
   `;
   
