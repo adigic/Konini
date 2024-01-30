@@ -2,6 +2,7 @@ function displayProducts(productArray) {
   const ProductListElement = document.getElementById("productList");
 
   const productList = document.createElement("ul");
+
   // Gå igenom varje produkt i listan
   productArray.forEach((product) => {
     // Skapa en Li för varje product
@@ -19,20 +20,28 @@ function displayProducts(productArray) {
 
     // Skapa en div för img-elementet
     const imgContainer = document.createElement("div");
-    imgContainer.classList.add("img-container"); // Add class name here.
+    imgContainer.classList.add("img-container");
 
     // Skapa en div för info-elementen
     const infoContainer = document.createElement("div");
-    infoContainer.classList.add("info-container"); // Add class name here.
+    infoContainer.classList.add("info-container");
 
     const productImage = document.createElement("img");
+
+    // Sätt src-attributet för img-elementet
     productImage.src = product.Image;
+
+    // Sätt alt-attributet för img-elementet (förutsatt att "alt" finns i JSON)
+    productImage.alt = product.alt || "Product Image";
+
     // Lägg till img-element i imgContainer-div
     imgContainer.appendChild(productImage);
+
     // Lägg till element i infoContainer-div
     infoContainer.appendChild(productType);
     infoContainer.appendChild(productColor);
     infoContainer.appendChild(productPrice);
+
     // Lägg till alla element
     listItem.appendChild(imgContainer);
     listItem.appendChild(infoContainer);
@@ -47,15 +56,17 @@ function displayProducts(productArray) {
         price: product.Price,
         id: product.id,
       });
-      console.log(queryParams);
+
       //SKICKA PARAMETRAR TILL PRODUCTPAGE
       window.location.href = `../Pages/productPage.html?${queryParams.toString()}`;
     });
 
     productList.appendChild(listItem);
   });
+
   ProductListElement.appendChild(productList);
 }
+
 
 // Function to fetch products based on category
 function fetchProductsByCategory(category) {
