@@ -195,12 +195,12 @@
 
     .box1{
         grid-template-columns: 100%;
-        grid-template-rows: 30% 70%;
+        grid-template-rows:25% 75%;
         grid-template-areas: 
         "pb"
         "p1";
         height: 750px;
-        width: 70%;
+        width: 75%;
         margin: auto;
     }
     .pinkbox h4{
@@ -249,7 +249,7 @@
         width:90%;
     }
 }
-
+/*-------------------------------mobile view-------------------------------*/
 @media only screen and (max-width: 590px){
     
     .pinkbox h4{
