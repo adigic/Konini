@@ -6,112 +6,128 @@
       "Sale": "200",
       "Price": "400",
       "id": "1",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256666512.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256666512.jpeg?w=450&auto=format",
+      "alt" : "Lång röd klänning"
     },
     {
       "Type": "Geo Dress",
       "Color": "Black",
       "Price": "199",
       "id": "2",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256124380.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256124380.jpeg?w=450&auto=format",
+      "alt" : "Lång svart klänning"
     },
     {
       "Type": "Ryder Dress",
       "Color": "Golden Spice",
       "Price": "199",
       "id": "3",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e681b9c94e.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e681b9c94e.jpeg",
+      "alt" : "Lång gul klänning"
     },
     {
       "Type": "Ricky Dress",
       "Color": "Serenity Stripes",
       "Price": "199",
       "id": "4",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e247205d50.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e247205d50.jpeg?w=450&auto=format",
+      "alt" : "Lång blåranding klänning"
     },
     {
       "Type": "Novo Print Dress",
       "Color": "Fleur",
       "Price": "199",
       "id": "5",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256781081.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256781081.jpeg",
+      "alt" : "Lång blommig klänning"
     },
     {
       "Type": "Olinda Print Dress",
       "Color": "Circle Tiles",
       "Price": "199",
       "id": "6",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad0ea4dbf8.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad0ea4dbf8.jpeg",
+      "alt" : "Lång orange klänning med cirklar"
     },
     {
       "Type": "Orleans Dress",
       "Color": "Rose Passion",
       "Price": "199",
       "id": "7",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5cb773a64c4c9.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5cb773a64c4c9.jpeg",
+      "alt" : "Rosa klänning"
     },
     {
       "Type": "Rylee Skirt",
       "Color": "Blue Harbour",
       "Price": "449",
       "id": "8",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d20f4a847006.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d20f4a847006.jpeg",
+      "alt" : "Lång blå kjol"
     },
     {
       "Type": "Madonna Print Skirt",
       "Color": "Flower Love",
       "Price": "449",
       "id": "9",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256491625.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256491625.jpeg",
+      "alt" : "Lång blommig kjol"
     },
     {
       "Type": "Fant Skirt",
       "Color": "Flower Woven",
       "Price": "199",
       "id": "10",
-      "Image": "https://image-resizing.booztcdn.com/en-fant/eft220346_crosedust_1.webp?has_grey=1&has_webp=1&dpr=2.5&size=w400"
+      "Image": "https://image-resizing.booztcdn.com/en-fant/eft220346_crosedust_1.webp?has_grey=1&has_webp=1&dpr=2.5&size=w400",
+      "alt" : "Kort blommig kjol"
     },
     {
       "Type": "Ricky Shirt",
       "Color": "Serenity Stripes",
       "Price": "199",
       "id": "11",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg",
+      "alt" : "Blårandig skjorta"
     },
     {
       "Type": "Seth Playsuit",
       "Color": "Navy Sky",
       "Price": "199",
       "id": "12",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg",
+      "alt" : "Marinblå onepiece"
     },
     {
       "Type": "Fardosa Print Top",
       "Color": "Pale Floral",
       "Price": "199",
       "id": "13",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg",
+      "alt" : "Rosa blommig top "
     },
     {
       "Type": "Ryder Shirt",
       "Color": "Off White",
       "Price": "299",
       "id": "14",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6ad4d7309.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6ad4d7309.jpeg",
+      "alt" : "Vit skjorta"
     },
     {
       "Type": "Florina Shirt",
       "Color": "Cornflower",
       "Price": "199",
       "id": "15",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256542220.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256542220.jpeg",
+      "alt" : "Ljusblå skjorta"
     },
     {
       "Type": "Noa Top",
       "Color": "Navy Sky",
       "Price": "249",
       "id": "16",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780566.jpeg"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780566.jpeg",
+      "alt" : "Marinblå top"
     }
   ],
 
@@ -121,70 +137,80 @@
       "Color": "Black",
       "Sale": "299",
       "Price": "599",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e690a4c1b1.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e690a4c1b1.jpeg?w=450&auto=format",
+      "alt" : "Långärmad svart klänning"
     },
     {
       "Type": "Ryder Shirt",
       "Color": "Golden Spice",
       "Sale": "249",
       "Price": "499",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6b7a2acf5.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6b7a2acf5.jpeg?w=450&auto=format",
+      "alt" : "Långärmad gul skjorta"
     },
     {
       "Type": "Nilen Dress",
       "Color": "Fire Red",
       "Sale": "299",
       "Price": "599",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256721141.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256721141.jpeg?w=450&auto=format",
+      "alt" : "Kortärmad röd klänning"
     },
     {
       "Type": "Noa Top",
       "Color": "Off White",
       "Sale": "249",
       "Price": "499",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780615.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780615.jpeg?w=450&auto=format",
+      "alt" : "Offwhite kortärmad top"
     },
     {
       "Type": "Ryder Shirt",
       "Color": "Black",
       "Sale": "249",
       "Price": "499",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d3579eb5b70b.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d3579eb5b70b.jpeg?w=450&auto=format",
+      "alt" : "Långärmad svart skjorta"
     },
     {
       "Type": "Richie Top",
       "Color": "Off White Dot",
       "Sale": "249",
       "Price": "499",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d147de3b3649.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d147de3b3649.jpeg?w=450&auto=format",
+      "alt" : "Kortärmad vit top med svarta prickar"
     },
     {
       "Type": "Kail Bodystocking",
       "Color": "Rich Blue",
       "Sale": "199",
       "Price": "399",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256360873.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256360873.jpeg?w=450&auto=format",
+      "alt" : "Långärmad marinblå body"
     },
     {
       "Type": "Omar Shorts",
       "Color": "Taffy",
       "Sale": "199",
       "Price": "399",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad4165d90b.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad4165d90b.jpeg?w=450&auto=format",
+      "alt" : "Beige shorts"
     },
     {
       "Type": "Omar Shorts",
       "Color": "Navy Sky",
       "Sale": "199",
       "Price": "399",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad3c40b5de.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad3c40b5de.jpeg?w=450&auto=format",
+      "alt" : "Svart shorts"
     },
     {
       "Type": "Geo Top",
       "Color": "Blue Harbour",
       "Sale": "99",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d138068795a8.jpeg?w=450&auto=format"
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d138068795a8.jpeg?w=450&auto=format",
+      "alt" : "Ljusblå kortärmad top"
     }
   ],
   "Dresses": [
@@ -193,44 +219,57 @@
       "Color": "Red",
       "Sale": "200",
       "Price": "400",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256666512.jpeg?w=450&auto=format"
+      "id": "1",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256666512.jpeg?w=450&auto=format",
+      "alt" : "Lång röd klänning"
     },
     {
       "Type": "Geo Dress",
       "Color": "Black",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256124380.jpeg?w=450&auto=format"
+      "id": "2",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256124380.jpeg?w=450&auto=format",
+      "alt" : "Lång svart klänning"
     },
     {
       "Type": "Ryder Dress",
       "Color": "Golden Spice",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e681b9c94e.jpeg"
+      "id": "3",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e681b9c94e.jpeg",
+      "alt" : "Lång gul klänning"
     },
     {
       "Type": "Ricky Dress",
       "Color": "Serenity Stripes",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e247205d50.jpeg?w=450&auto=format"
+      "id": "4",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e247205d50.jpeg?w=450&auto=format",
+      "alt" : "Lång blåranding klänning"
     },
     {
       "Type": "Novo Print Dress",
       "Color": "Fleur",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256781081.jpeg"
+      "id": "5",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256781081.jpeg",
+      "alt" : "Lång blommig klänning"
     },
-
     {
       "Type": "Olinda Print Dress",
       "Color": "Circle Tiles",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad0ea4dbf8.jpeg"
+      "id": "6",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5ccad0ea4dbf8.jpeg",
+      "alt" : "Lång orange klänning med cirklar"
     },
     {
       "Type": "Orleans Dress",
       "Color": "Rose Passion",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5cb773a64c4c9.jpeg"
+      "id": "7",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5cb773a64c4c9.jpeg",
+      "alt" : "Rosa klänning"
     }
   ],
   "Skirts": [
@@ -238,19 +277,25 @@
       "Type": "Rylee Skirt",
       "Color": "Blue Harbour",
       "Price": "449",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d20f4a847006.jpeg"
+      "id": "8",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d20f4a847006.jpeg",
+      "alt" : "Lång blå kjol"
     },
     {
       "Type": "Madonna Print Skirt",
       "Color": "Flower Love",
       "Price": "449",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256491625.jpeg"
+      "id": "9",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256491625.jpeg",
+      "alt" : "Lång blommig kjol"
     },
     {
       "Type": "Fant Skirt",
       "Color": "Flower Woven",
       "Price": "199",
-      "Image": "https://image-resizing.booztcdn.com/en-fant/eft220346_crosedust_1.webp?has_grey=1&has_webp=1&dpr=2.5&size=w400"
+      "id": "10",
+      "Image": "https://image-resizing.booztcdn.com/en-fant/eft220346_crosedust_1.webp?has_grey=1&has_webp=1&dpr=2.5&size=w400",
+      "alt" : "Kort blommig kjol"
     }
   ],
   "Shirts": [
@@ -258,19 +303,25 @@
       "Type": "Ricky Shirt",
       "Color": "Serenity Stripes",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg"
+      "id": "11",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e26f7201a9.jpeg",
+      "alt" : "Blårandig skjorta"
     },
     {
       "Type": "Ryder Shirt",
       "Color": "Off White",
       "Price": "299",
-      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6ad4d7309.jpeg"
+      "id": "14",
+      "Image": "https://quickbutik.imgix.net/7579r/products/5d1e6ad4d7309.jpeg",
+      "alt" : "Vit skjorta"
     },
     {
       "Type": "Florina Shirt",
       "Color": "Cornflower",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256542220.jpeg"
+      "id": "15",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256542220.jpeg",
+      "alt" : "Ljusblå skjorta"
     }
   ],
 
@@ -279,19 +330,25 @@
       "Type": "Seth Playsuit",
       "Color": "Navy Sky",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg"
+      "id": "12",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-15525606148.jpeg",
+      "alt" : "Marinblå onepiece"
     },
     {
       "Type": "Fardosa Print Top",
       "Color": "Pale Floral",
       "Price": "199",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg"
+      "id": "13",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256000738.jpeg",
+      "alt" : "Rosa blommig top "
     },
     {
       "Type": "Noa Top",
       "Color": "Navy Sky",
       "Price": "249",
-      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780566.jpeg"
+      "id": "16",
+      "Image": "https://quickbutik.imgix.net/7579r/products/7579r-155256780566.jpeg",
+      "alt" : "Marinblå top"
     }
   ]
 }

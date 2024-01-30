@@ -2,6 +2,7 @@ function displaysaleProducts(productArray) {
   const ProductListElement = document.getElementById("productList");
 
   const productList = document.createElement("ul");
+
   // Gå igenom varje produkt i listan
   productArray.forEach((product) => {
     // Skapa en Li för varje product
@@ -36,20 +37,28 @@ function displaysaleProducts(productArray) {
 
     // Skapa en div för img-elementet
     const imgContainer = document.createElement("div");
-    imgContainer.classList.add("img-container"); // Add class name here.
+    imgContainer.classList.add("img-container");
 
     // Skapa en div för info-elementen
     const infoContainer = document.createElement("div");
-    infoContainer.classList.add("info-container"); // Add class name here.
+    infoContainer.classList.add("info-container");
 
     const productImage = document.createElement("img");
+
+    // Sätt src-attributet för img-elementet
     productImage.src = product.Image;
+
+    // Sätt alt-attributet för img-elementet (förutsatt att "alt" finns i JSON)
+    productImage.alt = product.alt || "Sale Product Image";
+
     // Lägg till img-element i imgContainer-div
     imgContainer.appendChild(productImage);
+
     // Lägg till element i infoContainer-div
     infoContainer.appendChild(productType);
     infoContainer.appendChild(productColor);
     infoContainer.appendChild(productPriceContainer);
+
     // Lägg till alla element
     listItem.appendChild(imgContainer);
     listItem.appendChild(infoContainer);
@@ -62,8 +71,10 @@ function displaysaleProducts(productArray) {
 
     productList.appendChild(listItem);
   });
+
   ProductListElement.appendChild(productList);
 }
+
 
 // Hämta products från servern när sidan laddas
 fetch("http://localhost:3000/Sale")
