@@ -324,7 +324,7 @@ ul {
 
 /* NAVBAR HIGHLIGHT */
 #active {
-  color: var(--hovercolor) !important;
+  color: var(--hovercolor);
 }
 
 /*-----------------------DROPDOWN-----------------------------------------*/
@@ -347,7 +347,7 @@ ul {
 
 .dropdown-content {
   display: block;
-  max-height: 0;
+  max-height: 0;  
   overflow: hidden;
   position: absolute;
   background-color: #f9f9f9;
@@ -365,6 +365,10 @@ ul {
 }
 
 .dropdown:hover .dropdown-content {
+  max-height: 500px; /* adjust the maximum height as needed */
+}
+
+.dropdown:focus-within .dropdown-content {
   max-height: 500px; /* adjust the maximum height as needed */
 }
 
