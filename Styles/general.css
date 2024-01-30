@@ -369,7 +369,7 @@ ul {
 }
 
 .dropdown:focus-within .dropdown-content {
-  max-height: 500px; /* adjust the maximum height as needed */
+  max-height: 500px; /* enables tab in nav dropdown */
 }
 
 /*---------------------------MAIN--------------------------------------------------*/
