@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
   decreaseQuantityButton.addEventListener("click", decreaseQuantity);
 });
 
+  // Initialisera quantityDisplay3 till 1
+  const quantityDisplay3 = document.getElementById("quantityDisplay3");
+  quantityDisplay3.textContent = "1";
+
 function increaseQuantity() {
   const quantityDisplay = document.getElementById("quantityDisplay");
   const quantityDisplay2 = document.getElementById("quantityDisplay2");
@@ -59,22 +63,22 @@ function updateTotalPrice() {
   const totalPrice = initialPrice * quantity;
 
   const totalPrice1 = document.getElementById("price");
-  totalPrice1.textContent = `${totalPrice} SEK`;
+  totalPrice1.textContent = `${totalPrice}:-`;
 
   const totalPrice3 = document.getElementById("price3");
   totalPrice3.textContent = `${totalPrice} SEK`;
 }
 
-function updateCartPage(type, color, image, id, price) {
+function updateCartPage(type, color, image, id, price, sale) {
   // Update product title
   const productNameElement = document.getElementById("productName");
   productNameElement.textContent = `${color} ${type}`;
 
   const productPriceElement = document.getElementById("productPrice");
-  productPriceElement.textContent = `${price}kr`;
+  productPriceElement.textContent = `${price}:-`;
 
   const productPriceElement2 = document.getElementById("totalSum");
-  productPriceElement2.textContent = `${price}SEK`;
+  productPriceElement2.textContent = `${price} SEK`;
 
   // Update the image source of the active item
   const productImageElement = document.getElementById("img");
@@ -91,5 +95,5 @@ function updateCartPage(type, color, image, id, price) {
   const quantity = parseInt(quantityDisplay.textContent);
   const totalPrice = price * quantity;
   const totalPriceElement = document.getElementById("price");
-  totalPriceElement.textContent = `${totalPrice}kr`;
+  totalPriceElement.textContent = `${totalPrice}:-`;
 }
