@@ -1,14 +1,39 @@
+// Function to fetch all products from data.json and cache them
+let allProducts = null; // Cache the products once fetched
+
+function fetchAllProducts() {
+  if (allProducts) {
+    // If products are already cached, return them
+    return Promise.resolve(allProducts);
+  }
+  return fetch('/data.json')
+    .then((res) => res.json())
+    .then((data) => {
+      allProducts = data; // Cache the products
+      return allProducts;
+    })
+    .catch((err) => console.log('Error fetching data.json:', err));
+}
+
+// Filter products by category
+function filterProductsByCategory(products, category) {
+  return category === 'Products'
+    ? Object.values(products).flat() // Return all products if "Products" is selected
+    : products[category] || []; // Return specific category or empty array if not found
+}
+
+// Display products function
 function displayProducts(productArray) {
   const ProductListElement = document.getElementById("productList");
+  ProductListElement.innerHTML = ""; // Clear existing products
 
   const productList = document.createElement("ul");
 
-  // Gå igenom varje produkt i listan
+  // Iterate over each product
   productArray.forEach((product) => {
-    // Skapa en Li för varje product
     const listItem = document.createElement("li");
 
-    // Skapa element
+    // Create elements for product data
     const productType = document.createElement("h2");
     productType.textContent = `${product.Type}`;
 
@@ -18,37 +43,25 @@ function displayProducts(productArray) {
     const productPrice = document.createElement("h5");
     productPrice.textContent = `${product.Price}:-`;
 
-    // Skapa en div för img-elementet
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("img-container");
 
-    // Skapa en div för info-elementen
     const infoContainer = document.createElement("div");
     infoContainer.classList.add("info-container");
 
     const productImage = document.createElement("img");
-
-    // Sätt src-attributet för img-elementet
     productImage.src = product.Image;
-
-    // Sätt alt-attributet för img-elementet (förutsatt att "alt" finns i JSON)
     productImage.alt = product.alt || "Product Image";
 
-    // Lägg till img-element i imgContainer-div
     imgContainer.appendChild(productImage);
-
-    // Lägg till element i infoContainer-div
     infoContainer.appendChild(productType);
     infoContainer.appendChild(productColor);
     infoContainer.appendChild(productPrice);
 
-    // Lägg till alla element
     listItem.appendChild(imgContainer);
     listItem.appendChild(infoContainer);
 
-    // Lägger till click event listener för att hantera klick på varje produkt
     listItem.addEventListener("click", () => {
-      // Redirect to the product page and send product data as parameters
       const queryParams = new URLSearchParams({
         type: product.Type,
         color: product.Color,
@@ -56,8 +69,6 @@ function displayProducts(productArray) {
         price: product.Price,
         id: product.id,
       });
-
-      //SKICKA PARAMETRAR TILL PRODUCTPAGE
       window.location.href = `../Pages/productPage.html?${queryParams.toString()}`;
     });
 
@@ -67,15 +78,14 @@ function displayProducts(productArray) {
   ProductListElement.appendChild(productList);
 }
 
-
-// Function to fetch products based on category
+// Fetch products by category and display them
 function fetchProductsByCategory(category) {
-  return fetch(`http://localhost:3000/${category}`)
-    .then((res) => res.json())
+  return fetchAllProducts()
+    .then((data) => filterProductsByCategory(data, category))
     .catch((err) => console.log(`Error fetching ${category}:`, err));
 }
 
-// Function to handle button click and fetch/display products
+// Handle button click to fetch and display products by category
 function handleCategoryButtonClick(category) {
   const productListElement = document.getElementById("productList");
   productListElement.innerHTML = "";
@@ -89,28 +99,9 @@ function handleCategoryButtonClick(category) {
     );
 }
 
-// Event listeners for category buttons
-document
-  .getElementById("allProductsButton")
-  .addEventListener("click", () => handleCategoryButtonClick("Products"));
-
-document
-  .getElementById("dressesButton")
-  .addEventListener("click", () => handleCategoryButtonClick("Dresses"));
-document
-  .getElementById("skirtsButton")
-  .addEventListener("click", () => handleCategoryButtonClick("Skirts"));
-document
-  .getElementById("shirtsButton")
-  .addEventListener("click", () => handleCategoryButtonClick("Shirts"));
-document
-  .getElementById("topsButton")
-  .addEventListener("click", () => handleCategoryButtonClick("Tops"));
-
+// Update the category title
 function updateCategoryTitle(category) {
   const categoryTitleElement = document.getElementById("categoryTitle");
-
-  // Switch Categori titel
   switch (category.toLowerCase()) {
     case "products":
       categoryTitleElement.textContent = "Alla Produkter";
@@ -128,20 +119,31 @@ function updateCategoryTitle(category) {
       categoryTitleElement.textContent = "Toppar";
       break;
     default:
-      // For other categories, use the category name as is
       categoryTitleElement.textContent = category;
       break;
   }
 }
 
+// Event listeners for category buttons
+document
+  .getElementById("allProductsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Products"));
+document
+  .getElementById("dressesButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Dresses"));
+document
+  .getElementById("skirtsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Skirts"));
+document
+  .getElementById("shirtsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Shirts"));
+document
+  .getElementById("topsButton")
+  .addEventListener("click", () => handleCategoryButtonClick("Tops"));
+
+// Load products by category on page load
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the category from the URL
   const urlParams = new URLSearchParams(window.location.search);
-  const category = urlParams.get("category");
-
-  if (category) {
-    // Fetch and display products for the selected category
-
-    handleCategoryButtonClick(category);
-  }
+  const category = urlParams.get("category") || "Products";
+  handleCategoryButtonClick(category);
 });
