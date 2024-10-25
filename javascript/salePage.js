@@ -77,11 +77,11 @@ function displaysaleProducts(productArray) {
 
 
 // Hämta products från servern när sidan laddas
-fetch("http://localhost:3000/Sale")
+fetch("/salePage.json")
   .then((res) => res.json())
-  .then((productServer) => {
+  .then((data) => {
     // Visa products från data.json
-    displaysaleProducts(productServer);
+    displaysaleProducts(data.Sale);
   })
   .catch((err) => console.log("error" + err));
 
